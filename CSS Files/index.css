@@ -1,0 +1,132 @@
+body{
+	display: grid;
+	grid-template-columns: 75px auto;
+	background-image: url("../Resources/Images/CT-home.jpg");
+	background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Futura", sans-serif;
+}
+
+#menu{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(255,255,255,0.5);
+
+}
+
+#menu div{
+	display: flex;
+	width: 75px;
+	height: 75px;
+	background-color: rgba(185,197,210, 0.7);
+	margin: 2px 0;
+	color:#fff;
+	font-size: 40px;
+	align-items: center;
+	justify-content: center;
+}
+
+#menu div:hover{
+	color: rgb(255, 62, 108);
+	cursor: pointer;
+}
+
+
+
+#content{
+   background-color: rgba(255,255,255,0.7);
+   display: grid;
+   grid-template-rows: 25% 20% auto 25%;
+   grid-template-columns: 30% 100px 5px auto 5%;
+
+}
+
+/*.grid {
+	background-color: red;
+	border: 2px solid #000;
+}*/
+
+.vertical-text-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.vertical-text-container span{
+	line-height: 75px;
+    height: 75px;
+	margin: 0;
+	padding-right: 30px;
+	font-size: 70px;
+	color: rgb(90,90,90);
+
+}
+
+.vertical-line{
+	width: 5px;
+	height: 100%;
+	background-color: rgb(90,90,90);
+}
+
+.text-container{
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.text-container p{
+	margin: 0 30px;
+}
+
+.text-container p:nth-child(1){
+	font-size: 50px;
+	color: rgb(90,90,90);
+}
+
+.text-container p:nth-child(2){
+	font-size: 25px;
+	color: rgb(255,80,122);
+}
+
+.bttn-container{
+	display: flex;
+	align-items: flex-end;
+}
+
+.bttn-container button{
+	margin-left: 20px;
+	padding: 15px;
+	font-size: 20px;
+	font-family: "Futura";
+	color: #fff;
+	text-align: center;
+	width: 280px;
+	background-color: rgb(255, 80, 122);
+	border: 1px solid rgb(255, 80, 122);
+}
+
+
+.bttn-container button:hover{
+	
+	background-color: rgb(255, 62, 108);
+	border: 1px solid rgb(255, 62, 108);
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
