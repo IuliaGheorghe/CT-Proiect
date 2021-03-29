@@ -1,5 +1,40 @@
 body{
 	margin: 0;
 	padding: 0;
+	display: grid;
+	grid-template-columns: 75px auto;
+	height: 100vh;
+    overflow: hidden;
+    font-family: "Futura", sans-serif;
 }
 
+
+#menu{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(255,255,255,0.5);
+
+}
+
+#menu div{
+	display: flex;
+	width: 75px;
+	height: 75px;
+	background-color: rgba(185,197,210, 0.7);
+	margin: 2px 0;
+	color:#fff;
+	font-size: 40px;
+	align-items: center;
+	justify-content: center;
+}
+
+#menu div:hover{
+	color: rgb(255, 62, 108);
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
