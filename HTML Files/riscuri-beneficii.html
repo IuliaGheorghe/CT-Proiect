@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Computerul Tomograf | Riscuri.Beneficii</title>
+	<title>Computerul Tomograf | Beneficii.Riscuri</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="../CSS Files/style.css" rel="stylesheet">
 	<link href="../CSS Files/riscuri-beneficii.css" rel="stylesheet">
@@ -9,18 +9,66 @@
 <body>
 	<!-- Menu -->
 	<div id="menu">
-		 <a  href="../index.html"><div class="fa fa-home" aria-hidden="true" title="Acasă"></div></a>
-		 <a  href="info.html"><div class="fa fa-question-circle" aria-hidden="true" title="Ce este tomografia computerizată?"></div></a>
-		 <a  href="componente.html"><div class="fa fa-puzzle-piece" aria-hidden="true" title="Componente"></div></a>
-         <a  href="functionare.html"><div class="fa fa-cog" aria-hidden="true" title="Mecanismul de funcționare"></div></a>
-		 <a  href="afectiuni.html"><div class="fa fa-medkit" aria-hidden="true" title="Ce afecțiuni pot fi determinate?"></div></a>
-		 <a  href="info.html"><div class="fa fa-info-circle" aria-hidden="true" title="Ce trebuie să știi?"></div></a>
-		 <a  href="riscuri-beneficii.html"><div class="fa fa-balance-scale" aria-hidden="true" title="Riscuri. Beneficii"></div></a>
-	</div>
+     <a  href="../index.html" onmouseover="menuHover(0)" onmouseout="menuHoverOut(0)"><div class="fa fa-home menuElement" aria-hidden="true"></div><div class="menuElementExp">Acasă</div></a>
+     <a  href="intro.html" onmouseover="menuHover(1)" onmouseout="menuHoverOut(1)"><div class="fa fa-question-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce este tomografia computerizată?</div></a>
+     <a  href="componente.html" onmouseover="menuHover(2)" onmouseout="menuHoverOut(2)"><div class="fa fa-puzzle-piece menuElement" aria-hidden="true"></div><div class="menuElementExp">Componente</div></a>
+     <a  href="functionare.html" onmouseover="menuHover(3)" onmouseout="menuHoverOut(3)"><div class="fa fa-cog menuElement" aria-hidden="true"></div><div class="menuElementExp">Mecanismul de funcționare</div></a>
+     <a  href="afectiuni.html" onmouseover="menuHover(4)" onmouseout="menuHoverOut(4)"><div class="fa fa-medkit menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce afecțiuni pot fi determinate?</div></a>
+     <a  href="info.html" onmouseover="menuHover(5)" onmouseout="menuHoverOut(5)"><div class="fa fa-info-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce trebuie să știi?</div></a>
+     <a  href="riscuri-beneficii.html" onmouseover="menuHover(6)" onmouseout="menuHoverOut(6)"><div class="fa fa-balance-scale menuElement" aria-hidden="true"></div><div class="menuElementExp">Beneficii. Riscuri</div></a>
+  </div>
+
+  <header>Beneficii și riscuri.</header>
 	
 	<!-- Content -->
+  <div id="contentOverlay"></div>
 	<div id="content">
+    <div id="balance">
+      <div>
+       <p>Beneficii:</p><br>
+       <ol>
+       <li> CT-ul poate fi utilizat aproape în orice domeniu și pentru orice țesut;</li>
+       <li> Poate realiza o reconstrucție 3D a oaselor;</li>
+       <li> Poate face chiar și o colonoscopie virtuală sau analiza în detaliu inima;</li>
+       <li> În situații de urgență, poate detecta rapid leziuni interne, mai ales după un traumatism complex.</li>
+       <li> Poate face radiografii din orice unghi, folosind un sistem complex de detectori și computere;</li>
+       <li> Pentru femeile însărcinate, tomografiile computerizate nu aduc riscuri fătului. Chiar și pentru intervențiile în zona pelviană (pentru care de obicei sunt recomandate examinările de tip MRI sau cele cu ultrasunete) în cazuri de urgență, imagistica CT poate reprezenta o alternativă acceptabilă. </li>
+       </ol>
+     </div>
 
+      <div>
+       <p>Riscuri:</p><br>
+             <ol>
+             <li> Substanța de contrast poate determina o senzație de căldură și apariția unui gust metalic în gură, iar unii pacienți pot avea dureri de cap sau stare de greață;</li>
+             <li> Substanța de contrast poate provoca reacții alergice;</li>
+             <li> Este o metodă de diagnostic iradiantă (totusi, aici trebuie menționat că se folosește doza minimă de radiație)</li>
+             <li> Risurile de dezvoltare a cancerului, deși sunt mici, pot crește în timp în cazul repetărilor multiple ale radiografiilor
+                    (riscurile sunt crescute în general în rândul copiilor, în special în cazul intervențiilor la nivelul pieptului sau abdomenului) </li>
+             </ol>
+      </div>
+
+
+    </div>
+
+   <figure><img src="https://www.govloop.com/wp-content/uploads/2016/02/rockbalance.jpeg"/></figure
 	</div>
+
+  <script type="text/javascript">
+
+    document.getElementsByClassName("menuElement")[6].style.color="rgb(255, 62, 108)";
+
+    function menuHover(x){
+      document.getElementsByClassName("menuElement")[x].style.color="rgb(255, 80, 122)";
+      document.getElementsByClassName("menuElementExp")[x].style.display="flex";
+      document.getElementById("contentOverlay").style.display="flex";
+    }
+
+    function menuHoverOut(x){
+      document.getElementsByClassName("menuElement")[x].style.color="#fff";
+      document.getElementsByClassName("menuElementExp")[x].style.display="none";
+      document.getElementById("contentOverlay").style.display="none";
+      document.getElementsByClassName("menuElement")[6].style.color="rgb(255, 62, 108)";
+    }
+  </script>
 </body>
 </html>

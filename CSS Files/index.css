@@ -1,15 +1,42 @@
 body{
-	background-image: url("../Resources/Optimised Images/CT-home.jpg");
+	background-image: url("../Resources/Optimised Images/CT-home-min.jpg");
 	background-size: cover;
+	background-repeat: no-repeat;
+	/*display: grid;
+	grid-template-columns: 75px auto;*/
+    /*overflow: hidden;*/
 }
+
+/*#menu, #menuExp, #content{
+   position: relative;
+
+}*/
+
 
 #content{
-   background-color: rgba(255,255,255,0.7);
-   display: grid;
-   grid-template-rows: 25% 20% auto 25%;
-   grid-template-columns: 30% 100px 5px auto 5%;
-
+	display: grid;
+    grid-template-rows: 25% 20% auto 25%;
+    grid-template-columns: 30% 100px 5px auto 5%;
+	position: absolute;
+	z-index: 1;
+	margin-top: 0;
+	padding: 0;
+	left:0;
+	right: 0;
+	top:0;
+	bottom: 0;
+	
 }
+
+/*#content{
+	position: absolute;
+	z-index: 1;
+	width: 100vw;
+	height: 100vh;
+   margin-top: 0;
+   
+
+}*/
 
 /*.grid {
 	background-color: red;
@@ -85,8 +112,6 @@ body{
 	border: 1px solid rgb(255, 62, 108);
 	cursor: pointer;
 }
-
-
 
 
 

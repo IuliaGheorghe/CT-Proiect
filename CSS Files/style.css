@@ -1,24 +1,43 @@
 body{
 	margin: 0;
 	padding: 0;
-	display: grid;
-	grid-template-columns: 75px auto;
+	position: relative;
 	height: 100vh;
-    overflow: hidden;
     font-family: "Futura", sans-serif;
+    text-align: justify;
+}
+
+header{
+
+	position: fixed;
+	z-index: 2;
+	width: calc(100vw - 140px);
+    height:80px;
+	background-color: rgb(255, 80, 122);
+	display: flex;
+	align-items: flex-end;
+	font-size: 35px;
+	color: #fff;
+	padding: 20px;
+	letter-spacing: 1px;
+	padding-left: 2in;
 }
 
 
 #menu{
+   
    display: flex;
    flex-direction: column;
+   position: fixed;
+   z-index: 3;
    justify-content: center;
-   align-items: center;
-   background-color: rgba(255,255,255,0.5);
+   height: 100vh;
+   /*background-color: rgba(255,255,255,0.7);*/
 
 }
 
-#menu div{
+
+.menuElement{
 	display: flex;
 	width: 75px;
 	height: 75px;
@@ -30,11 +49,50 @@ body{
 	justify-content: center;
 }
 
-#menu div:hover{
+.menuElementExp{
+	font-size: 18px;
+	font-weight: 500;
+	width: 300px;
+	height: 75px;
+	margin: 2px 0;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	color:#000;
+	background-color: rgba(255,255,255,0.8);
+	display: none;
+
+}
+
+
+.menuElementExp:hover, .menuElement:hover{
 	color: rgb(255, 62, 108);
 	cursor: pointer;
 }
 
-a {
+#menu a {
+	display: flex;
 	text-decoration: none;
+}
+
+#content{
+	background-color: rgba(255,255,255,0.7);
+	position: relative;
+	/*margin-top: 100px;*/
+	/*padding: 40px;
+	padding-left: 120px;*/
+	padding: 2in;
+}
+
+
+#contentOverlay{
+	display: flex;
+	position: fixed;
+	z-index: 2;
+	width: 100vw;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	background-color: rgba(0,0,0,0.25);
+	display: none;
 }

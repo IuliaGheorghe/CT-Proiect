@@ -1,0 +1,76 @@
+.topografie{
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 0 10px 0;
+}
+
+.topo{
+	width: 40%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(255, 80, 122);
+	font-size: 30px;
+	color:#fff;
+}
+
+.topo:hover{
+	cursor: pointer;
+}
+
+.infotext{
+	text-align: right;
+	color: #aaa;
+	margin-top: 0;
+	margin-bottom: 40px;
+}
+
+.topo1{
+	background-color: rgb(252,122,153)
+}
+
+p{
+	
+	text-align: justify;
+}
+
+.t-box p{
+	margin: 20px 40px;
+	margin-top: 20px;
+}
+
+h1{
+	margin: 40px;
+}
+
+.t-box{
+	height: 460px;
+	display: flex;
+	margin: 60px 0;
+}
+
+.info-box{
+	position: relative;
+	background-color: #eee;
+}
+
+img{
+	width: 350px;
+	height:460px;
+}
+
+.info-box p:nth-child(2){
+	margin-bottom: 0;
+}
+
+.info-box p:nth-child(4){
+	margin-top: 50px;
+}
+
+
+hr{
+	position: absolute;
+	width: 30%;
+	margin-left: 40px;
+}

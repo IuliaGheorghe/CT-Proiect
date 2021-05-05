@@ -1,0 +1,35 @@
+#time{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 40px;
+}
+
+#time p{
+    width: 30%;
+    line-height: 30px;
+}
+
+#time b{
+	font-size: 30px;
+}
+
+ol{
+	list-style-type: none;
+	justify-content: space-between;
+	display: grid;
+    grid-template-columns: 30% 30% 30%;
+    margin: 80px 50px 0 50px;
+}
+
+li{
+	height: 80px;
+	width: 300px;
+	background-color: #ddd;
+	margin: 10px;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}

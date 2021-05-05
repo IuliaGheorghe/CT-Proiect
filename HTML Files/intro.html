@@ -9,18 +9,105 @@
 <body>
 	<!-- Menu -->
 	<div id="menu">
-		 <a  href="../index.html"><div class="fa fa-home" aria-hidden="true" title="Acasă"></div></a>
-		 <a  href="info.html"><div class="fa fa-question-circle" aria-hidden="true" title="Ce este tomografia computerizată?"></div></a>
-		 <a  href="componente.html"><div class="fa fa-puzzle-piece" aria-hidden="true" title="Componente"></div></a>
-		 <a  href="functionare.html"><div class="fa fa-cog" aria-hidden="true" title="Mecanismul de funcționare"></div></a>
-		 <a  href="afectiuni.html"><div class="fa fa-medkit" aria-hidden="true" title="Ce afecțiuni pot fi determinate?"></div></a>
-		 <a  href="info.html"><div class="fa fa-info-circle" aria-hidden="true" title="Ce trebuie să știi?"></div></a>
-		 <a  href="riscuri-beneficii.html"><div class="fa fa-balance-scale" aria-hidden="true" title="Riscuri. Beneficii"></div></a>
-	</div>
+     <a  href="../index.html" onmouseover="menuHover(0)" onmouseout="menuHoverOut(0)"><div class="fa fa-home menuElement" aria-hidden="true"></div><div class="menuElementExp">Acasă</div></a>
+     <a  href="intro.html" onmouseover="menuHover(1)" onmouseout="menuHoverOut(1)"><div class="fa fa-question-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce este tomografia computerizată?</div></a>
+     <a  href="componente.html" onmouseover="menuHover(2)" onmouseout="menuHoverOut(2)"><div class="fa fa-puzzle-piece menuElement" aria-hidden="true"></div><div class="menuElementExp">Componente</div></a>
+     <a  href="functionare.html" onmouseover="menuHover(3)" onmouseout="menuHoverOut(3)"><div class="fa fa-cog menuElement" aria-hidden="true"></div><div class="menuElementExp">Mecanismul de funcționare</div></a>
+     <a  href="afectiuni.html" onmouseover="menuHover(4)" onmouseout="menuHoverOut(4)"><div class="fa fa-medkit menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce afecțiuni pot fi determinate?</div></a>
+     <a  href="info.html" onmouseover="menuHover(5)" onmouseout="menuHoverOut(5)"><div class="fa fa-info-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce trebuie să știi?</div></a>
+     <a  href="riscuri-beneficii.html" onmouseover="menuHover(6)" onmouseout="menuHoverOut(6)"><div class="fa fa-balance-scale menuElement" aria-hidden="true"></div><div class="menuElementExp">Beneficii. Riscuri</div></a>
+  </div>
 	
+   <header>Ce este tomografia computerizată?</header>
 	<!-- Content -->
+
+  <div id="contentOverlay"></div>
 	<div id="content">
+         
+         <div class="topografie">
+         	<div class="topo topo1" onclick="topografie()">tomos</div>
+         	<div class="topo topo2" onclick="topografie2()">graphia</div>
+         </div>
+         <p class="infotext"><em>Apasă pe carduri pentru a afla traducerile</em>.</p>
+
+         <p>Tomografia Computerizată (CT) este o metodă de diagnosticare care combină razele X cu tehnologia computerizată avansată pentru a reda imagini clare și detaliate ale structurilor interne și organelor corpului. Aceasta a revoluționat medicina permițând observarea unor afecțiuni ce în trecut puteau fi descoperite numai prin intermediul chirurgiei sau autopsiei.</p>
+         <p>Computerul tomograf a fost inventat de doi cercetători în mod independent: inginerul britanic Godfrey Hounsfield (Laboratoarele EMI din Anglia) și fizicianul Allan Cormack, (Universitatea Tufts, Massachusetts). Cei doi au primit premiul Nobel în 1979.</p>
+
+         <div class="t-box godfrey">
+         	<img src="https://cdn.britannica.com/57/21057-050-CB057BB2/Godfrey-N-Hounsfield-1979.jpg"/>
+         	<div class="info-box">
+         		<h1>Godfrey Hounsfield</h1>
+         		<p> 28 august 1919 – 12 august 2004</p>
+            <hr>
+         		<p>A fost un inginer electric englez care a împărțit Premiul Nobel pentru Fiziologie sau Medicină cu Allan McLeod Cormack pentru contribuțiile sale în dezvoltarea tehnicilor de diagnosticare folosind tomografia axială computerizată (conform originalului, Computerized Axial Tomography, sau CAT).</p>
+         		<p>Numele său este dat așa zisei scalei Hounsfield, scală ce folosește metoda de măsurare cantitativă a radiodensității folosite în evaluarea scanărilor CAT. Scala este măsurată în unități de măsură numite unități Hounsfield, având simbolul HF, măsurând - 1000 HF, în cazul aerului, 0 HF, în cazul apei, până la + 1000 HF, în cazul oaselor.</p>
+         	</div>
+         </div>
+
+         <div class="t-box allan">
+         	
+         	<div class="info-box">
+         		<h1>Allan McLeod Cormack</h1>
+         		<p> 23 februarie 1924 – 7 mai 1998</p>
+            <hr>
+         		<p>A fost un medic american de origine sud-africană, cunoscut pentru cercetările sale din domeniul tomografiei computerizate. În cadrul Universității din Cape Town, a primit doctoratul în fizică în 1944, ca în anul următor să obțină titlul de Master of Science din partea aceleiași universități.</p>
+         		<p>Cercetările sale s-au înscris în domeniul fizicii particulelor elementare. A manifestat un interes deosebit pentru radiografie și a stabilit fundamentul teoretic al tomografiei computerizate, perioadă în care Godfrey Hounsfield a realizat primul scanner.</p>
+         		<p>În 1990 a primit National Medal of Science. A fost decorat postum (în 2002) cu Ordinul de Mapungubwe din partea Africii de Sud.</p>
+         	</div>
+         	<div class=".imgHov"><img src="https://lh3.googleusercontent.com/proxy/lGzLRTvCfbr1GWxwVeRUq5gGZU71MK6TFk2l4iTYeh9lPL40rpI1uvTXh1FFcl9QwF4CKPXSFCxPRqfnsywCtGWXHA3xhsxlddg6XeVTspwAPOVEGJMrLaPZXptd5w=s0-d"/></div>
+         </div>
 
 	</div>
+
+   <script type="text/javascript">
+
+
+      document.getElementsByClassName("menuElement")[1].style.color="rgb(255, 62, 108)";
+      
+      click1=0;
+
+      function topografie(){
+         if(click1%2==0){
+      document.getElementsByClassName("topo")[0].innerHTML="felie (secțiune)";
+      document.getElementsByClassName("topo")[0].style.backgroundColor="rgba(0,0,0,0.8)";
+   }
+      else{
+      document.getElementsByClassName("topo")[0].innerHTML="tomos";
+      document.getElementsByClassName("topo")[0].style.backgroundColor="rgb(252,122,153)";
+   }
+      click1++;
+   }
+
+
+      click2=0;
+
+      function topografie2(){
+         if(click2%2==0)
+         {
+      document.getElementsByClassName("topo")[1].innerHTML="scriere";
+      document.getElementsByClassName("topo")[1].style.backgroundColor="rgba(0,0,0,0.8)";
+   }
+      else
+      {
+      document.getElementsByClassName("topo")[1].innerHTML="graphia";
+      document.getElementsByClassName("topo")[1].style.backgroundColor="rgb(255, 80, 122)";
+   }
+   click2++;
+   }
+
+   function menuHover(x){
+      document.getElementsByClassName("menuElement")[x].style.color="rgb(255, 80, 122)";
+      document.getElementsByClassName("menuElementExp")[x].style.display="flex";
+      document.getElementById("contentOverlay").style.display="flex";
+    }
+
+    function menuHoverOut(x){
+      document.getElementsByClassName("menuElement")[x].style.color="#fff";
+      document.getElementsByClassName("menuElementExp")[x].style.display="none";
+      document.getElementById("contentOverlay").style.display="none";
+      document.getElementsByClassName("menuElement")[1].style.color="rgb(255, 62, 108)";
+    }
+
+   </script>
 </body>
 </html>

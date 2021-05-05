@@ -9,18 +9,130 @@
 <body>
 	<!-- Menu -->
 	<div id="menu">
-		 <a  href="../index.html"><div class="fa fa-home" aria-hidden="true" title="Acasă"></div></a>
-		 <a  href="info.html"><div class="fa fa-question-circle" aria-hidden="true" title="Ce este tomografia computerizată?"></div></a>
-		 <a  href="componente.html"><div class="fa fa-puzzle-piece" aria-hidden="true" title="Componente"></div></a>
-		 <a  href="functionare.html"><div class="fa fa-cog" aria-hidden="true" title="Mecanismul de funcționare"></div></a>
-		 <a  href="afectiuni.html"><div class="fa fa-medkit" aria-hidden="true" title="Ce afecțiuni pot fi determinate?"></div></a>
-		 <a  href="info.html"><div class="fa fa-info-circle" aria-hidden="true" title="Ce trebuie să știi?"></div></a>
-		 <a  href="riscuri-beneficii.html"><div class="fa fa-balance-scale" aria-hidden="true" title="Riscuri. Beneficii"></div></a>
+		 <a  href="../index.html" onmouseover="menuHover(0)" onmouseout="menuHoverOut(0)"><div class="fa fa-home menuElement" aria-hidden="true"></div><div class="menuElementExp">Acasă</div></a>
+		 <a  href="intro.html" onmouseover="menuHover(1)" onmouseout="menuHoverOut(1)"><div class="fa fa-question-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce este tomografia computerizată?</div></a>
+		 <a  href="componente.html" onmouseover="menuHover(2)" onmouseout="menuHoverOut(2)"><div class="fa fa-puzzle-piece menuElement" aria-hidden="true"></div><div class="menuElementExp">Componente</div></a>
+		 <a  href="functionare.html" onmouseover="menuHover(3)" onmouseout="menuHoverOut(3)"><div class="fa fa-cog menuElement" aria-hidden="true"></div><div class="menuElementExp">Mecanismul de funcționare</div></a>
+		 <a  href="afectiuni.html" onmouseover="menuHover(4)" onmouseout="menuHoverOut(4)"><div class="fa fa-medkit menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce afecțiuni pot fi determinate?</div></a>
+		 <a  href="info.html" onmouseover="menuHover(5)" onmouseout="menuHoverOut(5)"><div class="fa fa-info-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce trebuie să știi?</div></a>
+		 <a  href="riscuri-beneficii.html" onmouseover="menuHover(6)" onmouseout="menuHoverOut(6)"><div class="fa fa-balance-scale menuElement" aria-hidden="true"></div><div class="menuElementExp">Beneficii. Riscuri</div></a>
 	</div>
 	
+	<header>Componente</header>
 	<!-- Content -->
+	<div id="contentOverlay"></div>
 	<div id="content">
-		
+
+		<p>Părţile componente ale computerului tomograf sunt: </p>
+        <ol>
+        	<li onclick="compoExpFun(0)"> tunelul <i class="fa fa-caret-down" aria-hidden="true"></i></li>
+        	<li class="compoExp"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+
+            <li onclick="compoExpFun(1)"> detectoarele de radiaţie X <i class="fa fa-caret-down" aria-hidden="true"></i></li>
+            <li class="compoExp"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+
+            <li onclick="compoExpFun(2)"> masa mobilă pe care este aşezat pacientul <i class="fa fa-caret-down" aria-hidden="true"></i></li>
+            <li class="compoExp"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+
+            <li onclick="compoExpFun(3)"> sursa de raze X <i class="fa fa-caret-down" aria-hidden="true"></i></li>
+            <li class="compoExp"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+
+            <li onclick="compoExpFun(4)"> monitorul <i class="fa fa-caret-down" aria-hidden="true"></i></li>
+            <li class="compoExp"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+
+            <li onclick="compoExpFun(5)"> computerul (cu software-ul aferent de reconstrucţie a imaginii) <i class="fa fa-caret-down" aria-hidden="true"></i></li>
+            <li class="compoExp"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+
+            <li onclick="compoExpFun(6)"> aparatura de stocare <i class="fa fa-caret-down" aria-hidden="true"></i></li>
+            <li class="compoExp"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+
+       </ol>
+       <p>Tomograful multidetector (cunoscut şi sub numele de “tomograf multislice”) permite o scanare continuă, concomitent cu deplasarea mesei cu pacientul. Astfel, acesta conduce la obţinerea mai rapidă a unor imagini de o calitate foarte bună cu ajutorul mai multor coroane de detectori.</p>
 	</div>
+
+	<script type="text/javascript">
+
+		document.getElementsByClassName("menuElement")[2].style.color="rgb(255, 62, 108)";
+
+		function menuHover(x){
+      document.getElementsByClassName("menuElement")[x].style.color="rgb(255, 80, 122)";
+      document.getElementsByClassName("menuElementExp")[x].style.display="flex";
+      document.getElementById("contentOverlay").style.display="flex";
+    }
+
+    function menuHoverOut(x){
+      document.getElementsByClassName("menuElement")[x].style.color="#fff";
+      document.getElementsByClassName("menuElementExp")[x].style.display="none";
+      document.getElementById("contentOverlay").style.display="none";
+      document.getElementsByClassName("menuElement")[2].style.color="rgb(255, 62, 108)";
+    }
+
+
+
+    let verifClick =[];
+    	for(let i=0;i<7;i++)
+    		verifClick[i]=0;
+    
+    function wasClicked(x){
+        verifClick[x]++;
+        return verifClick[x];
+    }
+
+
+    function compoExpFun(x){
+   
+    	if(wasClicked(x)%2!=0)
+    		{
+    			document.getElementsByClassName("compoExp")[x].style.display="flex";
+    			document.getElementsByTagName("li")[2*x].style.color="#fff";
+    			document.getElementsByTagName("li")[2*x].style.backgroundColor="rgba(0,0,0,0.8)";
+    		}
+
+        else
+    		{
+    			document.getElementsByClassName("compoExp")[x].style.display="none";
+    			document.getElementsByTagName("li")[2*x].style.color="#000";
+    			document.getElementsByTagName("li")[2*x].style.backgroundColor="#ddd";
+    		}
+
+
+    }
+
+	</script>
 </body>
 </html>

@@ -9,18 +9,77 @@
 <body>
 	<!-- Menu -->
 	<div id="menu">
-		 <a  href="../index.html"><div class="fa fa-home" aria-hidden="true" title="Acasă"></div></a>
-		 <a  href="info.html"><div class="fa fa-question-circle" aria-hidden="true" title="Ce este tomografia computerizată?"></div></a>
-		 <a  href="componente.html"><div class="fa fa-puzzle-piece" aria-hidden="true" title="Componente"></div></a>
-		 <a  href="functionare.html"><div class="fa fa-cog" aria-hidden="true" title="Mecanismul de funcționare"></div></a>
-		 <a  href="afectiuni.html"><div class="fa fa-medkit" aria-hidden="true" title="Ce afecțiuni pot fi determinate?"></div></a>
-		 <a  href="info.html"><div class="fa fa-info-circle" aria-hidden="true" title="Ce trebuie să știi?"></div></a>
-		 <a  href="riscuri-beneficii.html"><div class="fa fa-balance-scale" aria-hidden="true" title="Riscuri. Beneficii"></div></a>
+		 <a  href="../index.html" onmouseover="menuHover(0)" onmouseout="menuHoverOut(0)"><div class="fa fa-home menuElement" aria-hidden="true"></div><div class="menuElementExp">Acasă</div></a>
+		 <a  href="intro.html" onmouseover="menuHover(1)" onmouseout="menuHoverOut(1)"><div class="fa fa-question-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce este tomografia computerizată?</div></a>
+		 <a  href="componente.html" onmouseover="menuHover(2)" onmouseout="menuHoverOut(2)"><div class="fa fa-puzzle-piece menuElement" aria-hidden="true"></div><div class="menuElementExp">Componente</div></a>
+		 <a  href="functionare.html" onmouseover="menuHover(3)" onmouseout="menuHoverOut(3)"><div class="fa fa-cog menuElement" aria-hidden="true"></div><div class="menuElementExp">Mecanismul de funcționare</div></a>
+		 <a  href="afectiuni.html" onmouseover="menuHover(4)" onmouseout="menuHoverOut(4)"><div class="fa fa-medkit menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce afecțiuni pot fi determinate?</div></a>
+		 <a  href="info.html" onmouseover="menuHover(5)" onmouseout="menuHoverOut(5)"><div class="fa fa-info-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce trebuie să știi?</div></a>
+		 <a  href="riscuri-beneficii.html" onmouseover="menuHover(6)" onmouseout="menuHoverOut(6)"><div class="fa fa-balance-scale menuElement" aria-hidden="true"></div><div class="menuElementExp">Beneficii. Riscuri</div></a>
 	</div>
-	
+
+	<header>Ce afecțiuni pot fi determinate cu ajutorul unui CT?</header>
 	<!-- Content -->
+	<div id="contentOverlay"></div>
 	<div id="content">
+       <p>Tomografia computerizată este folosită pentru a investiga diferite părți ale corpului: abdomen, cap, membre, oase, plămâni, inimă, ficat, pancreas, rinichi, glande suprarenale, vase de sânge.</p>
+       <p>Problemele ce pot fi identificate cu ajutorul investigațiilor CT diferă în funcție de zona examinată: </p> <br>
+       <ul>
+         <li onmouseover="infoHov(0)" onmouseout="infoHovOut(0)"> <div class="torace image"></div> <div class="info"><div class="baseName">Torace</div> <br><br> <div class="txt"> Infecțiile, cancerul pulmonar, embolia pulmonară, anevrismele sau gradul de răspândire (metastazare) a cancerului</div> </li>
+         <li onmouseover="infoHov(1)" onmouseout="infoHovOut(1)"> <div class="abdomen image"></div> <div class="info"><div class="baseName">Abdomen</div> <br><br> <div class="txt"> Abcese, chisturi, infecții, tumori, anevrisme, diferite corpuri străine, hemoragii, ganglioni limfatici măriți, apendicită, boala inflamatorie intestinală sau diverticulita (boală la nivelu colonului care apare de obicei după vârsta de 40 de ani)</div> </li>
+         <li onmouseover="infoHov(2)" onmouseout="infoHovOut(2)"> <div class="tract image"></div> <div class="info"><div class="baseName">Tractul Urinar</div> <br><br> <div class="txt"> Apariția pietrelor la nivelul rinichilor, a blocajelor, tumorilor, infecțiilor sau a altor probleme renale</div></li>
+         <li onmouseover="infoHov(3)" onmouseout="infoHovOut(3)" > <div class="ficat image"></div> <div class="info"><div class="baseName">Ficat</div> <br><br> <div class="txt"> Tumori, hemoragii sau alte afecțiuni hepatice</div> </li>
+         <li onmouseover="infoHov(4)" onmouseout="infoHovOut(4)"> <div class="pancreas image"></div> <div class="info"><div class="baseName">Pancreas</div> <br><br> <div class="txt"> Tumori sau inflamații ale pancreasului (pancreatita)</div> </li>
+         <li onmouseover="infoHov(5)" onmouseout="infoHovOut(5)"> <div class="vezica image"></div>  <div class="info"><div class="baseName">Vezica biliară și căile biliare principale</div> <br><br> <div class="txt"> Cauzele unui blocaj la nivelul căilor biliare</div> </li>
+         <li onmouseover="infoHov(6)" onmouseout="infoHovOut(6)"> <div class="suprarenale image"></div>  <div class="info"><div class="baseName">Glandele suprarenale</div> <br><br> <div class="txt"> Apariția unor tumori sau creșterea în volum a glandelor</div> </li>
+         <li onmouseover="infoHov(7)" onmouseout="infoHovOut(7)" > <div class="splina image"></div> <div class="info"><div class="baseName">Splina</div> <br><br> <div class="txt"s>Leziunile traumatice</div> </li>
+         <li onmouseover="infoHov(8)" onmouseout="infoHovOut(8)" > <div class="membre image"></div> <div class="info"><div class="baseName">Membrele</div> <br><br> <div class="txt">Probleme ale picioarelor, brațelor, umerilor, coatelor, mâinilor, articulațiilor, șoldurile, genunchilor sau gleznelor</div> </li>
+       </ul><br>
+       <p>Particularități interesante: </p>
+       <ol>
+       <li> Urografia CT, o tomografie computerizată specială, poate detecta o litiază renală (pietre la nivel renal) sau o prostată mărită (hiperplazie benignă de prostată) fără a fi necesare și alte investigații. </li>
+       <li> CT-ul poate fi utilizat și pentru ghidarea acului în timpul drenării unui abces sau în timpul biopsiei (recoltare a unei mostre de țesut pentru analize în scopul diagnosticării unei boli) </li>
+       </ol>
 
 	</div>
+	<script type="text/javascript">
+
+		document.getElementsByClassName("menuElement")[4].style.color="rgb(255, 62, 108)";
+
+		function menuHover(x){
+      document.getElementsByClassName("menuElement")[x].style.color="rgb(255, 80, 122)";
+      document.getElementsByClassName("menuElementExp")[x].style.display="flex";
+      document.getElementById("contentOverlay").style.display="flex";
+    }
+
+    function menuHoverOut(x){
+      document.getElementsByClassName("menuElement")[x].style.color="#fff";
+      document.getElementsByClassName("menuElementExp")[x].style.display="none";
+      document.getElementById("contentOverlay").style.display="none";
+      document.getElementsByClassName("menuElement")[4].style.color="rgb(255, 62, 108)";
+    }
+
+    function infoHov(x){
+      document.getElementsByClassName("image")[x].style.width="50%";
+      document.getElementsByClassName("image")[x].style.borderRadius="20px 0 0 20px";
+      document.getElementsByClassName("info")[x].style.display="block";
+      document.getElementsByTagName("li")[x].style.display="flex";
+      document.getElementsByClassName("image")[x].style.flexShrink="0";
+      document.getElementsByClassName("info")[x].style.width="50%";
+      document.getElementsByClassName("info")[x].style.padding="40px";
+      document.getElementsByClassName("info")[x].style.borderRadius="0 20px 20px 0";
+
+
+    }
+
+    function infoHovOut(x){
+      document.getElementsByClassName("image")[x].style.width="100%";
+      document.getElementsByClassName("image")[x].style.borderRadius="20px";
+      document.getElementsByClassName("info")[x].style.display="none";
+
+
+    }
+
+	</script>
 </body>
 </html>

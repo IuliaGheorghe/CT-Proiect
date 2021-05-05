@@ -9,15 +9,15 @@
 <body>
 	<!-- Menu -->
 	<div id="menu">
-		 <a  href="index.html"><div class="fa fa-home" aria-hidden="true" title="Acasă"></div></a>
-		 <a  href="HTML Files/intro.html"><div class="fa fa-question-circle" aria-hidden="true" title="Ce este tomografia computerizată?"></div></a>
-		 <a  href="HTML Files/componente.html"><div class="fa fa-puzzle-piece" aria-hidden="true" title="Componente"></div></a>
-		 <a  href="HTML Files/functionare.html"><div class="fa fa-cog" aria-hidden="true" title="Mecanismul de funcționare"></div></a>
-		 <a  href="HTML Files/afectiuni.html"><div class="fa fa-medkit" aria-hidden="true" title="Ce afecțiuni pot fi determinate?"></div></a>
-		 <a  href="HTML Files/info.html"><div class="fa fa-info-circle" aria-hidden="true" title="Ce trebuie să știi?"></div></a>
-		 <a  href="HTML Files/riscuri-beneficii.html"><div class="fa fa-balance-scale" aria-hidden="true" title="Riscuri. Beneficii"></div></a>
+		 <a  href="index.html" onmouseover="menuHover(0)" onmouseout="menuHoverOut(0)"><div class="fa fa-home menuElement" aria-hidden="true"></div><div class="menuElementExp">Acasă</div></a>
+		 <a  href="HTML Files/intro.html" onmouseover="menuHover(1)" onmouseout="menuHoverOut(1)"><div class="fa fa-question-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce este tomografia computerizată?</div></a>
+		 <a  href="HTML Files/componente.html" onmouseover="menuHover(2)" onmouseout="menuHoverOut(2)"><div class="fa fa-puzzle-piece menuElement" aria-hidden="true"></div><div class="menuElementExp">Componente</div></a>
+		 <a  href="HTML Files/functionare.html" onmouseover="menuHover(3)" onmouseout="menuHoverOut(3)"><div class="fa fa-cog menuElement" aria-hidden="true"></div><div class="menuElementExp">Mecanismul de funcționare</div></a>
+		 <a  href="HTML Files/afectiuni.html" onmouseover="menuHover(4)" onmouseout="menuHoverOut(4)"><div class="fa fa-medkit menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce afecțiuni pot fi determinate?</div></a>
+		 <a  href="HTML Files/info.html" onmouseover="menuHover(5)" onmouseout="menuHoverOut(5)"><div class="fa fa-info-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce trebuie să știi?</div></a>
+		 <a  href="HTML Files/riscuri-beneficii.html" onmouseover="menuHover(6)" onmouseout="menuHoverOut(6)"><div class="fa fa-balance-scale menuElement" aria-hidden="true"></div><div class="menuElementExp">Beneficii. Riscuri</div></a>
 	</div>
-
+    
 	<!-- Content -->
 	<div id="content">
 
@@ -64,6 +64,23 @@
 	    <div class="grid"></div>
 
 	</div>
+
+	<script type="text/javascript">
+
+		document.getElementsByClassName("menuElement")[0].style.color="rgb(255, 62, 108)";
+
+		function menuHover(x){
+      document.getElementsByClassName("menuElement")[x].style.color="rgb(255, 80, 122)";
+      document.getElementsByClassName("menuElementExp")[x].style.display="flex";
+    }
+
+    function menuHoverOut(x){
+      document.getElementsByClassName("menuElement")[x].style.color="#fff";
+      document.getElementsByClassName("menuElementExp")[x].style.display="none";
+      document.getElementsByClassName("menuElement")[0].style.color="rgb(255, 62, 108)";
+    }
+
+	</script>
 
 </body>
 </html>

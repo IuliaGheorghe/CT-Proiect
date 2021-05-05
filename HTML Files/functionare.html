@@ -9,18 +9,52 @@
 <body>
 	<!-- Menu -->
 	<div id="menu">
-		 <a  href="../index.html"><div class="fa fa-home" aria-hidden="true" title="Acasă"></div></a>
-		 <a  href="info.html"><div class="fa fa-question-circle" aria-hidden="true" title="Ce este tomografia computerizată?"></div></a>
-		 <a  href="componente.html"><div class="fa fa-puzzle-piece" aria-hidden="true" title="Componente"></div></a>
-		 <a  href="functionare.html"><div class="fa fa-cog" aria-hidden="true" title="Mecanismul de funcționare"></div></a>
-		 <a  href="afectiuni.html"><div class="fa fa-medkit" aria-hidden="true" title="Ce afecțiuni pot fi determinate?"></div></a>
-		 <a  href="info.html"><div class="fa fa-info-circle" aria-hidden="true" title="Ce trebuie să știi?"></div></a>
-		 <a  href="riscuri-beneficii.html"><div class="fa fa-balance-scale" aria-hidden="true" title="Riscuri. Beneficii"></div></a>
+		 <a  href="../index.html" onmouseover="menuHover(0)" onmouseout="menuHoverOut(0)"><div class="fa fa-home menuElement" aria-hidden="true"></div><div class="menuElementExp">Acasă</div></a>
+		 <a  href="intro.html" onmouseover="menuHover(1)" onmouseout="menuHoverOut(1)"><div class="fa fa-question-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce este tomografia computerizată?</div></a>
+		 <a  href="componente.html" onmouseover="menuHover(2)" onmouseout="menuHoverOut(2)"><div class="fa fa-puzzle-piece menuElement" aria-hidden="true"></div><div class="menuElementExp">Componente</div></a>
+		 <a  href="functionare.html" onmouseover="menuHover(3)" onmouseout="menuHoverOut(3)"><div class="fa fa-cog menuElement" aria-hidden="true"></div><div class="menuElementExp">Mecanismul de funcționare</div></a>
+		 <a  href="afectiuni.html" onmouseover="menuHover(4)" onmouseout="menuHoverOut(4)"><div class="fa fa-medkit menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce afecțiuni pot fi determinate?</div></a>
+		 <a  href="info.html" onmouseover="menuHover(5)" onmouseout="menuHoverOut(5)"><div class="fa fa-info-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce trebuie să știi?</div></a>
+		 <a  href="riscuri-beneficii.html" onmouseover="menuHover(6)" onmouseout="menuHoverOut(6)"><div class="fa fa-balance-scale menuElement" aria-hidden="true"></div><div class="menuElementExp">Beneficii. Riscuri</div></a>
 	</div>
+
+	<header>Care este modul de funcționare al unui CT?</header>
 	
 	<!-- Content -->
+	<div id="contentOverlay"></div>
 	<div id="content">
-		
+		<p>Funcționarea CT se bazează pe două principii: </p>
+        <ol>
+        	<li> <p>Măsurarea atenuării unui fascicul de raze X ce traversează un corp și calculul coeficientului său de atenuare.</p><hr></li>
+            <li> <p>Reconstrucția imaginii unui obiect plecând de la proiecțiile sale diferite.</p> <hr> </li>
+        </ol>
+            <br>
+        <p>Planul de secțiune pentru majoritatea structurilor investigate este cel transversal sau axial. </p>
+        <p>În inelul ce reprezintă brațul tomografului se află un <b>emițător de raze X</b>, iar în partea opusă acestuia se regăsește <b>un rând de detectori</b> al căror rol este de <span class="underline">a recepta energia fotonică ce a traversat corpul uman și de a o transforma în energie luminoasă</span>. Energia luminoasă este ulterior transformată în <span class="underline">semnale electrice</span> de o <b>fotodiodă</b>. Semnalele, fiind digitalizate sunt transmise unui <b>procesor de imagini</b>, în acest mod construindu-se imaginea pe baza unui număr mare de măsurători. </p>
+
+        <figure><img src="https://thoracickey.com/wp-content/uploads/2016/07/A140935_2_En_2_Fig3_HTML.jpg" /></figure>
+
+        <p><b>Brațul tomografului</b> se mișcă de-a lungul corpului pentru a mapa întreg organul cerut, iar emițătorul și detectoarele se învârt în interiorul brațului pentru a surprinde din diverse unghiuri acțiunea, conducând la studierea unei zone din mai multe direcții și la obținerea unor rezultate de o calitate mai bună, la o rezoluție crescută.<p>
+       <p>Razele X sunt absorbite diferit de țesuturile prin care trec, astfel încât la detectorii din partea opusă ajung într-un număr mai mare sau mai mic. Computerul compară absorbția razelor de la detectorii vecini și își dă astfel seama mai bine de formă internă și neregularitățile diverselor organe sau țesuturi. </p>
+       <p>Uneori, pentru vizualizarea mai clară a țesuturilor este necesară administrarea unei <b>substanțe de contrast</b>. În tomografia computerizată cel mai frecvent se utilizează <span class="underline">substanțe de contrast iodate</span>.</p>
 	</div>
+
+	<script type="text/javascript">
+
+		document.getElementsByClassName("menuElement")[3].style.color="rgb(255, 62, 108)";
+
+		function menuHover(x){
+      document.getElementsByClassName("menuElement")[x].style.color="rgb(255, 80, 122)";
+      document.getElementsByClassName("menuElementExp")[x].style.display="flex";
+      document.getElementById("contentOverlay").style.display="flex";
+    }
+
+    function menuHoverOut(x){
+      document.getElementsByClassName("menuElement")[x].style.color="#fff";
+      document.getElementsByClassName("menuElementExp")[x].style.display="none";
+      document.getElementById("contentOverlay").style.display="none";
+      document.getElementsByClassName("menuElement")[3].style.color="rgb(255, 62, 108)";
+    }
+	</script>
 </body>
 </html>

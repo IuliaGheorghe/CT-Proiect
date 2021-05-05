@@ -1,0 +1,67 @@
+li{
+	list-style-type: none;
+	margin: 20px;
+	}
+
+.torace{
+	background: url("../Resources/Images/thorax.jpg");
+
+}
+
+.abdomen{
+	background: url("https://post.healthline.com/wp-content/uploads/2020/08/abdominal-film_thumb-2-732x549.jpg");
+	
+}
+
+.tract{
+	background: url("https://cdn-prod.medicalnewstoday.com/content/images/articles/184/184998/bladder-stones-shown-on-x-ray.jpg");
+}
+
+.ficat{
+	background: url("https://www.ucsfhealth.org/-/media/project/ucsf/ucsf-health/education/hero/liver-transplant-glossary-2x.jpg");
+}
+
+.pancreas{
+	background: url("https://www.nfcr.org/wp-content/uploads/2018/10/November-Is-Pancreatic-Cancer-Awareness-Month-blog-1024x585.jpg");
+}
+
+.vezica{
+	background: url("https://www.clinica-vasculara.ro/wp-content/uploads/2020/02/vezica-biliara-localizare-1.jpg");
+}
+
+.suprarenale{
+	background: url("https://img.gs/shcfmqtrbf/fit/https://doc.ro/uploads/photos//cache/cancerul-glandelor-suprarenale.jpg");
+}
+
+.splina{
+	background: url("https://doc.ro/uploads/photos//cache/bolile-splinei-afectiuni-splina.jpg");
+}
+
+.membre{
+	background: url("https://image.2bstronger.com/article/the-human-body/names-of-the-bones-in-the-human-leg-arm-21548/1000.jpg");
+}
+
+.image{
+	height: 500px;
+	width: 100%;
+	background-size: cover;
+	border-radius: 20px;
+		
+}
+
+/*.image:hover{
+	cursor: pointer;
+}*/
+
+li .info{
+	display: none;
+}
+
+.baseName{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.txt{
+	text-align: justify;
+}
