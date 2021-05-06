@@ -59,55 +59,16 @@
 
 	</div>
 
-   <script type="text/javascript">
+   <!-- JavaScript -->
 
+  <script type="text/javascript">
 
-      document.getElementsByClassName("menuElement")[1].style.color="rgb(255, 62, 108)";
-      
-      click1=0;
-
-      function topografie(){
-         if(click1%2==0){
-      document.getElementsByClassName("topo")[0].innerHTML="felie (secțiune)";
-      document.getElementsByClassName("topo")[0].style.backgroundColor="rgba(0,0,0,0.8)";
-   }
-      else{
-      document.getElementsByClassName("topo")[0].innerHTML="tomos";
-      document.getElementsByClassName("topo")[0].style.backgroundColor="rgb(252,122,153)";
-   }
-      click1++;
-   }
-
-
-      click2=0;
-
-      function topografie2(){
-         if(click2%2==0)
-         {
-      document.getElementsByClassName("topo")[1].innerHTML="scriere";
-      document.getElementsByClassName("topo")[1].style.backgroundColor="rgba(0,0,0,0.8)";
-   }
-      else
-      {
-      document.getElementsByClassName("topo")[1].innerHTML="graphia";
-      document.getElementsByClassName("topo")[1].style.backgroundColor="rgb(255, 80, 122)";
-   }
-   click2++;
-   }
-
-   function menuHover(x){
-      document.getElementsByClassName("menuElement")[x].style.color="rgb(255, 80, 122)";
-      document.getElementsByClassName("menuElementExp")[x].style.display="flex";
-      document.getElementById("contentOverlay").style.display="flex";
-    }
-
-    function menuHoverOut(x){
-      document.getElementsByClassName("menuElement")[x].style.color="#fff";
-      document.getElementsByClassName("menuElementExp")[x].style.display="none";
-      document.getElementById("contentOverlay").style.display="none";
-      document.getElementsByClassName("menuElement")[1].style.color="rgb(255, 62, 108)";
-    }
+    pageNo=1;
 
    </script>
+
+  <script type="text/javascript" src="../JS Files/menu.js"></script>
+
+  <script type="text/javascript" src="../JS Files/intro.js"></script>
 </body>
 </html>

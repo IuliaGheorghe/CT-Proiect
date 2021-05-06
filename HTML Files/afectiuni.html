@@ -42,44 +42,18 @@
        </ol>
 
 	</div>
-	<script type="text/javascript">
 
-		document.getElementsByClassName("menuElement")[4].style.color="rgb(255, 62, 108)";
+  <!-- JavaScript -->
 
-		function menuHover(x){
-      document.getElementsByClassName("menuElement")[x].style.color="rgb(255, 80, 122)";
-      document.getElementsByClassName("menuElementExp")[x].style.display="flex";
-      document.getElementById("contentOverlay").style.display="flex";
-    }
+  <script type="text/javascript">
+  	
+     pageNo=4;
 
-    function menuHoverOut(x){
-      document.getElementsByClassName("menuElement")[x].style.color="#fff";
-      document.getElementsByClassName("menuElementExp")[x].style.display="none";
-      document.getElementById("contentOverlay").style.display="none";
-      document.getElementsByClassName("menuElement")[4].style.color="rgb(255, 62, 108)";
-    }
+  </script>
 
-    function infoHov(x){
-      document.getElementsByClassName("image")[x].style.width="50%";
-      document.getElementsByClassName("image")[x].style.borderRadius="20px 0 0 20px";
-      document.getElementsByClassName("info")[x].style.display="block";
-      document.getElementsByTagName("li")[x].style.display="flex";
-      document.getElementsByClassName("image")[x].style.flexShrink="0";
-      document.getElementsByClassName("info")[x].style.width="50%";
-      document.getElementsByClassName("info")[x].style.padding="40px";
-      document.getElementsByClassName("info")[x].style.borderRadius="0 20px 20px 0";
+  <script type="text/javascript" src="../JS Files/menu.js"></script>
 
+  <script type="text/javascript" src="../JS Files/afectiuni.js"></script>
 
-    }
-
-    function infoHovOut(x){
-      document.getElementsByClassName("image")[x].style.width="100%";
-      document.getElementsByClassName("image")[x].style.borderRadius="20px";
-      document.getElementsByClassName("info")[x].style.display="none";
-
-
-    }
-
-	</script>
 </body>
 </html>

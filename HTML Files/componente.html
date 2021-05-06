@@ -85,54 +85,16 @@
        <p>Tomograful multidetector (cunoscut şi sub numele de “tomograf multislice”) permite o scanare continuă, concomitent cu deplasarea mesei cu pacientul. Astfel, acesta conduce la obţinerea mai rapidă a unor imagini de o calitate foarte bună cu ajutorul mai multor coroane de detectori.</p>
 	</div>
 
-	<script type="text/javascript">
+    <!-- JavaScript -->
 
-		document.getElementsByClassName("menuElement")[2].style.color="rgb(255, 62, 108)";
+    <script type="text/javascript">
 
-		function menuHover(x){
-      document.getElementsByClassName("menuElement")[x].style.color="rgb(255, 80, 122)";
-      document.getElementsByClassName("menuElementExp")[x].style.display="flex";
-      document.getElementById("contentOverlay").style.display="flex";
-    }
+      pageNo=2;
 
-    function menuHoverOut(x){
-      document.getElementsByClassName("menuElement")[x].style.color="#fff";
-      document.getElementsByClassName("menuElementExp")[x].style.display="none";
-      document.getElementById("contentOverlay").style.display="none";
-      document.getElementsByClassName("menuElement")[2].style.color="rgb(255, 62, 108)";
-    }
+   </script>
 
+    <script type="text/javascript" src="../JS Files/menu.js"></script>
 
-
-    let verifClick =[];
-    	for(let i=0;i<7;i++)
-    		verifClick[i]=0;
-    
-    function wasClicked(x){
-        verifClick[x]++;
-        return verifClick[x];
-    }
-
-
-    function compoExpFun(x){
-   
-    	if(wasClicked(x)%2!=0)
-    		{
-    			document.getElementsByClassName("compoExp")[x].style.display="flex";
-    			document.getElementsByTagName("li")[2*x].style.color="#fff";
-    			document.getElementsByTagName("li")[2*x].style.backgroundColor="rgba(0,0,0,0.8)";
-    		}
-
-        else
-    		{
-    			document.getElementsByClassName("compoExp")[x].style.display="none";
-    			document.getElementsByTagName("li")[2*x].style.color="#000";
-    			document.getElementsByTagName("li")[2*x].style.backgroundColor="#ddd";
-    		}
-
-
-    }
-
-	</script>
+    <script type="text/javascript" src="../JS Files/componente.js"></script>
 </body>
 </html>

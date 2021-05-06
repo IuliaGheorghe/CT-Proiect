@@ -19,17 +19,19 @@ ol{
 	justify-content: space-between;
 	display: grid;
     grid-template-columns: 30% 30% 30%;
+    grid-row-gap: 10px;
+	grid-column-gap: 10px;
     margin: 80px 50px 0 50px;
 }
 
 li{
-	height: 80px;
-	width: 300px;
 	background-color: #ddd;
-	margin: 10px;
 	padding: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-flow: wrap;
 
 }

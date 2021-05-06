@@ -5,10 +5,17 @@ ol{
 }
 
 li{
+	display: flex;
+	flex-direction: column;
 	font-weight: bold;
+	justify-content: space-between;
 	list-style-type: none;
 	width: 500px;
 	padding: 50px 0 30px 0;
+}
+
+hr{
+	width:100%;
 }
 
 p{
