@@ -45,7 +45,7 @@ h1{
 }
 
 .t-box{
-	height: 460px;
+	height: auto;
 	display: flex;
 	margin: 60px 0;
 }
