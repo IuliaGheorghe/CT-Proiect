@@ -10,10 +10,15 @@
 }
 
 #balance p{
+	background-color: rgba(0,0,0,0.8);
+	color:#fff;
 	font-weight: 600;
 	font-size: 20px;
-	padding-left: 20px;
+	margin-top: 0; 
+	padding: 30px;
 }
+
+
 
 ol li{
 	padding: 20px;
@@ -25,11 +30,7 @@ ul li{
 
 #balance div:nth-child(1), #balance div:nth-child(2){
 	background-color: #ddd;
-	padding: 20px;
-}
-
-#balance div:nth-child(2){
-	background-color: #aaa;
+	
 }
 
 figure{
