@@ -4,7 +4,7 @@ ol{
 	margin-bottom: 40px;
 }
 
-li{
+ol li{
 	display: flex;
 	flex-direction: column;
 	font-weight: bold;
@@ -18,9 +18,10 @@ hr{
 	width:100%;
 }
 
-p{
-	padding: 0 30px;
+h3{
+	padding: 50px 0 20px;
 }
+
 
 .underline{
 	text-decoration: underline;

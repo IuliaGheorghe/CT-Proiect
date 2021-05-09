@@ -15,8 +15,12 @@
 	padding-left: 20px;
 }
 
-li{
+ol li{
 	padding: 20px;
+}
+
+ul li{
+	padding: 10px 0 0 0;
 }
 
 #balance div:nth-child(1), #balance div:nth-child(2){
