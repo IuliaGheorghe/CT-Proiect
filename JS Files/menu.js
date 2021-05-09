@@ -16,3 +16,35 @@
       if(pageNo!==0)
       document.getElementById("contentOverlay").style.display="none";
     }
+
+
+// index=0;
+// console.log(index);
+
+// function changeCol(){
+//   console.log(index);
+//   if(index==1){
+//     document.getElementById('content').style.backgroundColor="#000";
+//     document.getElementById('content').style.color="#fff";
+//   }
+//   else{
+//     document.getElementById('content').style.backgroundColor="#fff";
+//     document.getElementById('content').style.color="#000";
+//   }
+// }
+
+
+
+// function dark(){
+//   index=1;
+//   console.log(index);
+//   changeCol();
+// }
+
+// function light(){
+//    index=0;
+//   changeCol();
+
+// }
+
+// changeCol();
