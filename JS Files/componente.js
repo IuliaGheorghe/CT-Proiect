@@ -11,7 +11,7 @@ function wasClicked(x){
 
 function compoExpFun(x){
    
-    	if(wasClicked(x)%2!=0)
+    	if(wasClicked(x)==1)
     		{
     			document.getElementsByClassName("compoExp")[x].style.display="flex";
     			document.getElementsByTagName("li")[2*x].style.color="#fff";
@@ -23,6 +23,7 @@ function compoExpFun(x){
     			document.getElementsByClassName("compoExp")[x].style.display="none";
     			document.getElementsByTagName("li")[2*x].style.color="#000";
     			document.getElementsByTagName("li")[2*x].style.backgroundColor="#ddd";
+                verifClick[x]=0;
     		}
 
 
