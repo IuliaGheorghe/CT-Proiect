@@ -5,10 +5,122 @@ body{
 	
 }
 
-/* !!!!!
+
+/* 
+
+**********************************
+**********************************
+
+Code Without Grid - Easier Version 
+
+**********************************
+**********************************
+
+*/
+
+#content{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left:0;
+	right: 0;
+	top:0;
+	bottom: 0;
+	
+}
 
 
-Code with grid - old version 
+#container{
+	display: flex;
+	color: rgb(90,90,90);
+
+}
+
+#letters-container{
+	display: flex;
+	justify-content: space-between;
+	width: 100px;
+	align-items: flex-end;
+	flex-direction: column;
+	height: 180px;
+	border-right: 5px solid rgb(90,90,90);;
+
+}
+
+#letters-container div{
+   font-size: 70px;
+   margin: 0;
+   margin-right: 30px;
+   line-height: 0.8;
+}
+
+
+
+#text-container{
+   margin-left: 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+p{
+	margin: 0;
+}
+
+p:nth-child(1){
+	font-size: 50px;
+	line-height: 0.8;
+}
+
+p:nth-child(2){
+	font-size: 30px;
+	color: rgb(255,80,122);
+}
+
+#bottom-part{
+	margin-top: 180px;
+	display: flex;
+
+}
+
+#white-space{
+	width: 135px;
+	height: 20px;
+}
+
+
+button{
+	padding: 15px;
+	font-size: 20px;
+	font-family: "Futura";
+	color: #fff;
+	text-align: center;
+	width: 280px;
+	background-color: rgb(255, 80, 122);
+	border: 1px solid rgb(255, 80, 122);
+}
+
+button:hover{
+	
+	background-color: rgb(255, 62, 108);
+	border: 1px solid rgb(255, 62, 108);
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Code with grid - Old version 
 
 
 */
@@ -120,111 +232,3 @@ Code with grid - old version
 */
 
 
-
-
-
-
-/* 
-
-**********************************
-**********************************
-
-Code Without Grid - Easier Version 
-
-**********************************
-**********************************
-
-*/
-
-#content{
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	left:0;
-	right: 0;
-	top:0;
-	bottom: 0;
-
-	
-}
-
-
-
-#container{
-	display: flex;
-	color: rgb(90,90,90);
-
-}
-
-#letters-container{
-	display: flex;
-	justify-content: space-between;
-	width: 100px;
-	align-items: flex-end;
-	flex-direction: column;
-	height: 180px;
-	border-right: 5px solid rgb(90,90,90);;
-
-}
-
-#letters-container div{
-   font-size: 70px;
-   margin: 0;
-   margin-right: 30px;
-   line-height: 0.8;
-}
-
-
-
-#text-container{
-   margin-left: 30px;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-}
-
-p{
-	margin: 0;
-}
-
-p:nth-child(1){
-	font-size: 50px;
-	line-height: 0.8;
-}
-
-p:nth-child(2){
-	font-size: 30px;
-	color: rgb(255,80,122);
-}
-
-#bottom-part{
-	margin-top: 180px;
-	display: flex;
-
-}
-
-#white-space{
-	width: 135px;
-	height: 20px;
-}
-
-
-button{
-	padding: 15px;
-	font-size: 20px;
-	font-family: "Futura";
-	color: #fff;
-	text-align: center;
-	width: 280px;
-	background-color: rgb(255, 80, 122);
-	border: 1px solid rgb(255, 80, 122);
-}
-
-button:hover{
-	
-	background-color: rgb(255, 62, 108);
-	border: 1px solid rgb(255, 62, 108);
-	cursor: pointer;
-}

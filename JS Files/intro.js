@@ -1,30 +1,26 @@
- click1=0;
+let clicksOnComponents=[0, 0]
 
-      function topografie(){
-         if(click1%2==0){
-      document.getElementsByClassName("topo")[0].innerHTML="felie (secțiune)";
-      document.getElementsByClassName("topo")[0].style.backgroundColor="rgba(0,0,0,0.8)";
-   }
-      else{
-      document.getElementsByClassName("topo")[0].innerHTML="tomos";
-      document.getElementsByClassName("topo")[0].style.backgroundColor="rgb(252,122,153)";
-   }
-      click1++;
-   }
+function topografie(x){
 
+   if(clicksOnComponents[x]==0){
 
-      click2=0;
-
-      function topografie2(){
-         if(click2%2==0)
-         {
-      document.getElementsByClassName("topo")[1].innerHTML="scriere";
-      document.getElementsByClassName("topo")[1].style.backgroundColor="rgba(0,0,0,0.8)";
-   }
+      if(x==0)
+         document.getElementsByClassName("topo")[x].innerHTML="felie (secțiune)";
       else
-      {
-      document.getElementsByClassName("topo")[1].innerHTML="graphia";
-      document.getElementsByClassName("topo")[1].style.backgroundColor="rgb(255, 80, 122)";
+         document.getElementsByClassName("topo")[x].innerHTML="scriere";
+      
+      document.getElementsByClassName("topo")[x].style.backgroundColor="rgba(0,0,0,0.8)";
+      clicksOnComponents[x]=1;
    }
-   click2++;
+
+   else{
+      if(x==0)
+         document.getElementsByClassName("topo")[x].innerHTML="tomos";
+      else
+         document.getElementsByClassName("topo")[x].innerHTML="graphia";
+      
+      document.getElementsByClassName("topo")[x].style.backgroundColor="rgb(252,122,153)";
+      clicksOnComponents[x]=0;
    }
+      
+}
