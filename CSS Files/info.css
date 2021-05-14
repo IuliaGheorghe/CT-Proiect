@@ -2,12 +2,13 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	margin: 40px;
+	margin: 40px 0;
 }
 
 #time p{
-    width: 30%;
-    line-height: 30px;
+    width:80%;
+    padding: 0 0px 20px 0; 
+    line-height: 20px;
 }
 
 #time b{
@@ -18,10 +19,11 @@ ol{
 	list-style-type: none;
 	justify-content: space-between;
 	display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 32% 32% 32%;
     grid-row-gap: 10px;
 	grid-column-gap: 10px;
-    margin: 80px 50px 0 50px;
+    margin: 80px 10px 0 10px;
+    padding-left: 0;
 }
 
 li{
@@ -35,3 +37,5 @@ li{
 	flex-flow: wrap;
 
 }
+
+

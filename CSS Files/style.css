@@ -16,7 +16,7 @@ header{
 
 	position: fixed;
 	z-index: 2;
-	width: calc(100vw - 140px);
+	width: 100vw;
     height:80px;
 	background-color: var(--favPink);
 	display: flex;
@@ -100,4 +100,35 @@ header{
 	height: 100%;
 	background-color: rgba(0,0,0,0.25);
 	display: none;
+}
+
+
+@media only screen and (max-width: 1024px){
+
+    header{
+    height:60px;
+	font-size: 30px;
+	padding-left: 1in;
+}
+
+
+    .menuElement{
+    	width: 60px;
+    	height: 60px;
+    	font-size: 35px;
+    }
+
+    .menuElementExp{
+    	font-size: 16px;
+    	height: 60px;
+    }
+
+
+    #content{
+    	padding: 1.5in 1in;
+    }
+    
+    p{
+    	font-size: 12px;
+    }
 }

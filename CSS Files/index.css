@@ -232,3 +232,35 @@ Code with grid - Old version
 */
 
 
+@media only screen and (max-width: 1440px){
+
+#letters-container{
+	width: 80px;
+	height: 150px;
+
+}
+
+#letters-container div{
+   font-size: 50px;
+}
+
+p:nth-child(2){
+	font-size: 25px;
+}
+
+
+#bottom-part{
+	margin-top: 150px;
+
+}
+
+#white-space{
+	width: 115px;
+}
+
+
+button{
+	width: 260px;
+}
+}
+
