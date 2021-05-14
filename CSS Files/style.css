@@ -103,7 +103,9 @@ header{
 }
 
 
-@media only screen and (max-width: 1440px){
+
+
+@media only screen and (max-width: 1024px){
 
     header{
     height:60px;
@@ -128,7 +130,4 @@ header{
     	padding: 1.5in 1in;
     }
     
-    p{
-    	font-size: 12px;
-    }
 }
