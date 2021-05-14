@@ -16,8 +16,10 @@ header{
 
 	position: fixed;
 	z-index: 2;
-	width: 100vw;
-    height:80px;
+	top: 0;
+	height: 80px;
+	left: 0;
+	right: 0;
 	background-color: var(--favPink);
 	display: flex;
 	align-items: flex-end;
@@ -28,8 +30,12 @@ header{
 	padding-left: 2in;
 }
 
+#for-mobile{
+	display: none;
+}
 
-#menu{
+
+#menu,#mobile-menu{
    
    display: flex;
    flex-direction: column;
@@ -39,6 +45,51 @@ header{
    height: 100vh;
    /*background-color: rgba(255,255,255,0.7);*/
 
+}
+
+.fa-bars{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	z-index: 3;
+	padding: 30px 20px 0 20px;
+	color: #fff;
+	width: 60px;
+	height: 60px;
+	font-size: 30px;
+	top: 0;
+	right: 0;
+}
+
+.fa-bars:hover{
+	cursor: pointer;
+}
+
+#mobile-menu{
+   width: 100vw;
+   justify-content: flex-start;
+   top: 100px;
+   right: 0;
+   height: auto;
+   display: none;
+
+}
+
+#mobile-menu a{
+	font-family: "Futura";
+	background-color: rgba(255,255,255,0.9);
+	display: flex;
+	text-decoration: none;
+	padding: 15px;
+	padding-left: 0.5in;
+	border-bottom: 1px solid #000;
+	color: #000;
+}
+
+#mobile-menu a:hover{
+	background-color: var(--favPink);
+	color: #fff;
 }
 
 
@@ -103,12 +154,9 @@ header{
 }
 
 
-
-
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1440px){
 
     header{
-    height:60px;
 	font-size: 30px;
 	padding-left: 1in;
 }
@@ -130,4 +178,76 @@ header{
     	padding: 1.5in 1in;
     }
     
+}
+
+
+@media only screen and (max-width: 1024px){
+
+	#menu{
+		display: none;
+	}
+   
+    #for-mobile{
+    	display: block;
+    }
+
+    header{
+	font-size: 22px;
+	padding-left: 0.5in;
+    }
+
+
+    #content{
+    	padding: 1.5in 0.5in;
+    }
+
+
+}
+
+@media only screen and (max-width: 725px){
+	header{
+	padding-left: 0.3in;
+    }
+
+
+    #content{
+    	padding: 1.25in 0.3in;
+    }
+
+    .fa-bars{
+	width: 30px;
+	height: 30px;
+	font-size: 25px;
+}
+
+    #mobile-menu{
+    top:85px;
+    }
+}
+
+@media only screen and (max-width: 670px){
+
+    #content{
+    	padding: 1.6in 0.3in;
+    }
+
+    .fa-bars{
+	width: 30px;
+	height: 30px;
+	font-size: 25px;
+}
+
+    #mobile-menu{
+    top:85px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+	body{
+		text-align: left;
+	}
+
+	#content{
+    	padding: 1.6in 0.2in;
+    }
 }

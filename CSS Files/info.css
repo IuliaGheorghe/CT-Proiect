@@ -39,3 +39,30 @@ li{
 }
 
 
+@media only screen and (max-width: 768px){
+	li{
+		text-align: left;
+	}
+}
+
+@media only screen and (max-width: 768px){
+
+    #time{
+    	flex-direction: column;
+    }
+     
+    #time p{
+    	width: 100%
+    }
+
+	img{
+		width: 50%;
+	}
+
+	ol{
+    grid-template-columns: 100%;
+}
+}
+
+
+

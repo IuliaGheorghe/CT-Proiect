@@ -14,12 +14,17 @@ function topografie(x){
    }
 
    else{
-      if(x==0)
+      if(x==0){
          document.getElementsByClassName("topo")[x].innerHTML="tomos";
+         document.getElementsByClassName("topo")[x].style.backgroundColor="rgb(252,122,153)";
+      }
       else
-         document.getElementsByClassName("topo")[x].innerHTML="graphia";
+         {
+            document.getElementsByClassName("topo")[x].innerHTML="graphia";
+            document.getElementsByClassName("topo")[x].style.backgroundColor="rgb(255, 80, 122)";
+         }
       
-      document.getElementsByClassName("topo")[x].style.backgroundColor="rgb(252,122,153)";
+      
       clicksOnComponents[x]=0;
    }
       

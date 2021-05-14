@@ -63,3 +63,23 @@ img{
 		width: 75%;
 	}
 }
+
+@media only screen and (max-width: 1024px){
+
+	img{
+		width: 85%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+
+	img{
+		width: 95%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+
+	img{
+		width: 100%;
+	}

@@ -2,6 +2,7 @@ ol{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 40px;
+	padding-left: 0; 
 }
 
 ol li{
@@ -34,4 +35,40 @@ h3{
 figure{
 	text-align: center;
 	margin: 40px;
+}
+
+@media only screen and (max-width: 768px){
+	ol{
+		flex-direction: column;
+		align-items:  center;
+		margin: 0;
+	}
+
+	ol li{
+		width: 80%;
+		padding: 20px;
+	}
+
+	figure{
+		margin: 40px 0;
+	}
+}
+
+@media only screen and (max-width: 490px){
+	img{
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 425px){
+	ol{
+		flex-direction: column;
+		align-items:  center;
+	}
+
+	ol li{
+		width: 100%;
+		padding: 0;
+		font-weight: 600;
+	}
 }

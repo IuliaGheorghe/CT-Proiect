@@ -59,6 +59,9 @@ li{
 
 li .info{
 	display: none;
+	padding: 40px;
+	width: 50%;
+	border-radius: 0 20px 20px 0;
 }
 
 .baseName{
@@ -68,4 +71,41 @@ li .info{
 
 .txt{
 	text-align: justify;
+}
+
+@media only screen and (max-width: 768px){
+	.baseName{
+		font-size: 25px;
+		text-align: left;
+	}
+
+	.txt{
+		text-align: left;
+	}
+}
+
+@media only screen and (max-width: 600px){
+    .image{
+		height: 400px;
+	}
+
+	li .info{
+		padding: 20px 25px;
+	}
+}
+
+@media only screen and (max-width: 425px){
+	.image{
+		height: 400px;
+	}
+
+	li .info{
+		padding: 10px 20px;
+	}
+
+	.baseName{
+		font-size: 18px;
+		text-align: left;
+	}
+
 }

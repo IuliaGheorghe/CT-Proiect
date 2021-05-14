@@ -86,11 +86,73 @@ hr{
 	}
 
 	.info-box{
-	width: 78%;
+	width: 76%;
     }
 
 	img{
-	width: 22%;
+	width: 24%;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+
+   .t-box{
+	flex-direction: column;
+	align-items: center;
+	background-color: #ddd;
+	border:2px solid #000;
+    }
+
+
+    .allan{
+    	flex-direction: column-reverse;
+    }
+
+    .info-box{
+	width: 100%;
+    }
+
+    img{
+    	width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 670px){
+
+	.topografie{
+		flex-direction: column;
+	}
+
+	.topo{
+		width: 100%;
+		font-size: 20px;
+	}
+
+	.topo:nth-child(1){
+		margin-bottom: 20px;
+	}
+
+	.infotext{
+		font-size: 14px;
+	}
+
+	hr{
+		width: 80%;
+	}
+
+
+}
+
+@media only screen and (max-width: 425px){
+
+	img{
+    	width: 100%;
+    }
+
+    .t-box p, .t-box h1, .t-box hr{
+    	margin: 10px;
     }
 
 }

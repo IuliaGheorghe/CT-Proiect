@@ -40,3 +40,15 @@ figure{
 figure img{
 	width: 60vw;
 }
+
+@media only screen and (max-width: 1024px){
+
+
+	#balance{
+		flex-direction: column;
+	}
+
+	#balance div{
+		width: 100%;
+	}
+}

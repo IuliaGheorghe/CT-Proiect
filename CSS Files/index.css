@@ -264,3 +264,63 @@ button{
 }
 }
 
+
+@media only screen and (max-width: 670px){
+
+	#letters-container{
+		width: 60px;
+		height: 120px;
+	}
+
+	#letters-container div{
+	   margin-right: 20px;
+	   font-size: 50px;
+	}
+
+	#text-container{
+		margin-left: 20px;
+	}
+
+	p:nth-child(1){
+		font-size: 28px;
+	}
+
+	p:nth-child(2){
+		font-size: 20px;
+	}
+
+	#white-space{
+		width: 85px;
+	}
+
+
+	button{
+		width: 220px;
+		font-size: 18px;
+	}
+
+}
+
+
+@media only screen and (max-width: 425px){
+	p:nth-child(1){
+		font-size: 23px;
+	}
+	p:nth-child(2){
+		font-size: 18px;
+	}
+
+	#white-space{
+		width: 0;
+	}
+
+	#bottom-part{
+		justify-content: center;
+	}
+
+
+	button{
+		width: 200px;
+		font-size: 16px;
+	}
+}
