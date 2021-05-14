@@ -1,3 +1,8 @@
+:root{
+	--favPink:rgb(255, 80, 122);
+	--bgCol:rgba(255,255,255,0.7);
+}
+
 body{
 	margin: 0;
 	padding: 0;
@@ -13,7 +18,7 @@ header{
 	z-index: 2;
 	width: calc(100vw - 140px);
     height:80px;
-	background-color: rgb(255, 80, 122);
+	background-color: var(--favPink);
 	display: flex;
 	align-items: flex-end;
 	font-size: 35px;
@@ -76,7 +81,7 @@ header{
 }
 
 #content{
-	background-color: rgba(255,255,255,0.7);
+	background-color: var(--bgCol)/*rgba(255,255,255,0.7)*/;
 	position: relative;
 	/*margin-top: 100px;*/
 	/*padding: 40px;

@@ -18,18 +18,18 @@
     }
 
 
-// index=0;
-// console.log(index);
 
 // function changeCol(){
 //   console.log(index);
 //   if(index==1){
-//     document.getElementById('content').style.backgroundColor="#000";
-//     document.getElementById('content').style.color="#fff";
+//     document.documentElement.style.setProperty('--bgCol', '#000');
+//     // document.getElementById('content').style.backgroundColor="#000";
+//     // document.getElementById('content').style.color="#fff";
 //   }
 //   else{
-//     document.getElementById('content').style.backgroundColor="#fff";
-//     document.getElementById('content').style.color="#000";
+//     document.documentElement.style.setProperty('--bgCol', '#fff');
+//     // document.getElementById('content').style.backgroundColor="#fff";
+//     // document.getElementById('content').style.color="#000";
 //   }
 // }
 

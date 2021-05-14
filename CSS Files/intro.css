@@ -45,19 +45,21 @@ h1{
 }
 
 .t-box{
+	position: relative;
 	height: auto;
 	display: flex;
 	margin: 60px 0;
 }
 
 .info-box{
+	width: 75%;
 	position: relative;
 	background-color: #eee;
 }
 
 img{
-	width: 350px;
-	height:460px;
+	width: 25%;
+	height:auto;
 }
 
 .info-box p:nth-child(2){

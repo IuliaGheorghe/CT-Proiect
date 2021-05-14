@@ -1,5 +1,5 @@
 ol{
-	list-style: none;
+	list-style-type: none;
 	list-style-position: inside;
 	margin: 50px 0;
 	padding: 0;
@@ -26,4 +26,18 @@ li{
 
 li:nth-child(odd):hover{
 	cursor: pointer;
+}
+
+#image-cont{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	height: 500px;
+}
+
+
+img{
+	position: absolute;
+	width: 60%;
+	height: auto;
 }
