@@ -52,16 +52,19 @@ li{
     }
      
     #time p{
-    	width: 100%
+    	width: 100%;
     }
 
 	img{
-		width: 50%;
+		width: 40%;
 	}
 
 	ol{
     grid-template-columns: 100%;
 }
+    ol li{
+    	justify-content: flex-start;
+    }
 }
 
 

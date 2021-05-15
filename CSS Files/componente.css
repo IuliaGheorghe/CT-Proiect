@@ -9,7 +9,6 @@ li{
 	display: flex;
 	justify-content: space-between;
 	background-color: #ddd;
-	font-size: 18px;
 	padding: 40px 60px;
 	margin: 20px 0 0 0;
 	text-transform: capitalize;
@@ -19,7 +18,6 @@ li{
 .compoExp{
 	margin-top: 0;
 	background-color: rgba(0,0,0,0.03);
-	font-size: 15px;
 	display: none;
 	border: 2px solid rgba(0,0,0,0.8)
 }
@@ -45,13 +43,8 @@ img{
 
 
 	li{
-		font-size: 14px;
 		padding: 40px;
 		
-	}
-
-	.compoExp{
-		font-size: 12px;
 	}
 
 
@@ -82,4 +75,21 @@ img{
 
 	img{
 		width: 100%;
+	}
+
+
+}
+
+@media only screen and (max-width: 425px){
+
+	#image-cont{
+		height: 250px;
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width: 350px){
+
+	#image-cont{
+		height: 220px;
 	}

@@ -51,6 +51,10 @@ h1{
 	margin: 60px 0;
 }
 
+.allan{
+	margin-bottom: 0;
+}
+
 .info-box{
 	width: 75%;
 	position: relative;
@@ -152,7 +156,8 @@ hr{
     }
 
     .t-box p, .t-box h1, .t-box hr{
-    	margin: 10px;
+    	margin: 25px 10px;
     }
 
 }
+

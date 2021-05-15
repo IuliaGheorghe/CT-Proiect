@@ -1,6 +1,9 @@
 :root{
 	--favPink:rgb(255, 80, 122);
 	--bgCol:rgba(255,255,255,0.7);
+
+	--headerHeight:80px;
+	--headerPaddingTopBottom:20px;
 }
 
 body{
@@ -12,22 +15,27 @@ body{
     text-align: justify;
 }
 
-header{
-
-	position: fixed;
-	z-index: 2;
+#headerCont{
+	position: absolute;
 	top: 0;
-	height: 80px;
 	left: 0;
 	right: 0;
+	z-index: 2;
+}
+
+header{
+    position: relative;
+	justify-content: space-between;
 	background-color: var(--favPink);
 	display: flex;
 	align-items: flex-end;
 	font-size: 35px;
 	color: #fff;
-	padding: 20px;
+	padding: var(--headerPaddingTopBottom);
 	letter-spacing: 1px;
 	padding-left: 2in;
+	z-index: 2;
+	text-align: left;
 }
 
 #for-mobile{
@@ -35,7 +43,7 @@ header{
 }
 
 
-#menu,#mobile-menu{
+#menu{
    
    display: flex;
    flex-direction: column;
@@ -47,19 +55,13 @@ header{
 
 }
 
+#mobile-menu{
+	z-index: 2;
+}
+
 .fa-bars{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	z-index: 3;
-	padding: 30px 20px 0 20px;
-	color: #fff;
-	width: 60px;
-	height: 60px;
 	font-size: 30px;
-	top: 0;
-	right: 0;
+	display: none;
 }
 
 .fa-bars:hover{
@@ -67,10 +69,9 @@ header{
 }
 
 #mobile-menu{
+   position: relative;
    width: 100vw;
    justify-content: flex-start;
-   top: 100px;
-   right: 0;
    height: auto;
    display: none;
 
@@ -137,14 +138,14 @@ header{
 	/*margin-top: 100px;*/
 	/*padding: 40px;
 	padding-left: 120px;*/
-	padding: 2in;
+	padding: 2in 2in 30px;
 }
 
 
 #contentOverlay{
 	display: flex;
 	position: fixed;
-	z-index: 2;
+	z-index: 1;
 	width: 100vw;
 	top: 0;
 	bottom: 0;
@@ -175,7 +176,7 @@ header{
 
 
     #content{
-    	padding: 1.5in 1in;
+    	padding: 1.5in 1in 30px;
     }
     
 }
@@ -186,6 +187,10 @@ header{
 	#menu{
 		display: none;
 	}
+
+	.fa-bars{
+		display: block;
+	}
    
     #for-mobile{
     	display: block;
@@ -194,11 +199,14 @@ header{
     header{
 	font-size: 22px;
 	padding-left: 0.5in;
+	align-items: flex-start;
+	--headerPaddingTopBottom:30px;
+	padding: var(--headerPaddingTopBottom);
     }
 
 
     #content{
-    	padding: 1.5in 0.5in;
+    	padding: 1.5in 0.5in 30px;
     }
 
 
@@ -211,7 +219,7 @@ header{
 
 
     #content{
-    	padding: 1.25in 0.3in;
+    	padding: 1.25in 0.3in 20px;
     }
 
     .fa-bars{
@@ -220,15 +228,12 @@ header{
 	font-size: 25px;
 }
 
-    #mobile-menu{
-    top:85px;
-    }
 }
 
 @media only screen and (max-width: 670px){
 
     #content{
-    	padding: 1.6in 0.3in;
+    	padding: 1.6in 0.3in 20px;
     }
 
     .fa-bars{
@@ -237,17 +242,22 @@ header{
 	font-size: 25px;
 }
 
-    #mobile-menu{
-    top:85px;
-    }
 }
 
 @media only screen and (max-width: 425px){
+
+	header{
+	align-items:  center;
+	font-size: 20px;
+	padding: 20px 10px;
+    }
+
 	body{
 		text-align: left;
 	}
 
 	#content{
-    	padding: 1.6in 0.2in;
+    	padding: 1.6in 0.2in 20px;
     }
 }
+

@@ -95,9 +95,7 @@ li .info{
 }
 
 @media only screen and (max-width: 425px){
-	.image{
-		height: 400px;
-	}
+
 
 	li .info{
 		padding: 10px 20px;
@@ -108,4 +106,14 @@ li .info{
 		text-align: left;
 	}
 
+}
+
+@media only screen and (max-width: 360px){
+    .image{
+		height: 600px;
+	}
+
+	li .info{
+		padding: 20px 25px;
+	}
 }
