@@ -24,6 +24,7 @@ body{
 }
 
 header{
+	height: 80px;
     position: relative;
 	justify-content: space-between;
 	background-color: var(--favPink);
@@ -32,10 +33,10 @@ header{
 	font-size: 35px;
 	color: #fff;
 	padding: var(--headerPaddingTopBottom);
-	letter-spacing: 1px;
 	padding-left: 2in;
 	z-index: 2;
 	text-align: left;
+	font-weight: bold;
 }
 
 #for-mobile{
@@ -60,6 +61,7 @@ header{
 }
 
 .fa-bars{
+	margin-left: 30px;
 	font-size: 30px;
 	display: none;
 }
@@ -197,6 +199,7 @@ header{
     }
 
     header{
+    height: auto;
 	font-size: 22px;
 	padding-left: 0.5in;
 	align-items: flex-start;

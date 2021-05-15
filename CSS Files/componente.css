@@ -16,6 +16,7 @@ li{
 }
 
 .compoExp{
+	font-size: 14px;
 	margin-top: 0;
 	background-color: rgba(0,0,0,0.03);
 	display: none;
@@ -81,6 +82,7 @@ img{
 }
 
 @media only screen and (max-width: 425px){
+
 
 	#image-cont{
 		height: 250px;

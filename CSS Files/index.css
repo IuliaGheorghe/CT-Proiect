@@ -19,7 +19,7 @@ Code Without Grid - Easier Version
 */
 
 #content{
-
+    padding: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -116,8 +116,33 @@ button:hover{
 
 
 
+#ref{
+	position: absolute;
+    display: flex;
+    justify-content: flex-end;
+	z-index: 3;
+	bottom: 0;
+	right: 0;
+	left: 0; 
+}
+
+#ref button{
+	margin-right: 40px;
+	padding: 4px;
+	width: 100px;
+	font-size: 12px;
+	background-color: #000;
+	color: #fff;
+	border: none;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+}
 
 
+#ref button:hover{
+	background-color: rgba(0,0,0,0.8);
+	cursor: pointer;
+}
 
 
 
@@ -327,6 +352,14 @@ button{
 	button{
 		width: 200px;
 		font-size: 16px;
+	}
+
+	#ref{
+		justify-content: center;
+	}
+
+	#ref button{
+		margin: 0;
 	}
 }
 
