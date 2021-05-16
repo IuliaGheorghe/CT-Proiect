@@ -44,7 +44,7 @@ p{
 	text-align: justify;
 }
 
-.t-box p{
+.t-box p, span{
 	margin: 20px 40px;
 	margin-top: 20px;
 }
@@ -85,10 +85,16 @@ img{
 }
 
 
-hr{
+/*hr{
 	position: absolute;
 	width: 30%;
 	margin-left: 40px;
+}*/
+
+.date{
+	padding-bottom: 10px;
+	padding-right: 30px;
+	border-bottom: 1px solid #000;
 }
 
 
@@ -169,9 +175,14 @@ hr{
     	width: 100%;
     }
 
-    .t-box p, .t-box h1, .t-box hr{
+    .t-box p, .t-box h1, .t-box span{
     	margin: 25px 10px;
     }
 
 }
 
+@media only screen and (max-width: 340px){
+	span{
+		font-size: 14px;
+	}
+}

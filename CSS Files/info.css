@@ -1,3 +1,24 @@
+#slideshow{
+	width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 0;
+}
+
+#slideshow img{
+	width: 80%;
+}
+
+#slideshow .fa{
+    font-size: 50px;
+    padding: 40px; 
+}
+.fa:hover{
+    cursor: pointer;
+    color: var(--favPink);
+}
+
 #time{
 	display: flex;
 	justify-content: space-around;
@@ -64,6 +85,15 @@ li{
 }
     ol li{
     	justify-content: flex-start;
+    }
+
+    #slideshow img{
+	width: 95%;
+    }
+
+    #slideshow .fa{
+      font-size: 30px;
+      padding: 8px;
     }
 }
 
