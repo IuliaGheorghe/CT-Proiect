@@ -1,13 +1,32 @@
+.blue{
+	color: blue;
+}
+
+#slideshowParent{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+
 #slideshow{
 	width: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 50px 0;
+	margin: 50px 0 10px 0;
 }
+
 
 #slideshow img{
 	width: 80%;
+	border: 2px solid #000;
+}
+
+#slideshow img:hover{
+	cursor: pointer;
 }
 
 #slideshow .fa{
@@ -16,7 +35,7 @@
 }
 .fa:hover{
     cursor: pointer;
-    color: var(--favPink);
+    color: #aaa;
 }
 
 #time{
