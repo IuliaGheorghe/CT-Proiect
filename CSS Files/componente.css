@@ -17,6 +17,7 @@ li{
 
 .compoExp{
 	font-size: 14px;
+	text-transform: none;
 	margin-top: 0;
 	background-color: rgba(0,0,0,0.03);
 	display: none;

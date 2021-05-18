@@ -1,12 +1,12 @@
 let imagesSources=[
 
-"../Resources/Images/SlideShow Images/1.jpg",
-"../Resources/Images/SlideShow Images/2.jpg",
-"../Resources/Images/SlideShow Images/3.jpg",
-"../Resources/Images/SlideShow Images/4.jpg",
-"../Resources/Images/SlideShow Images/5.jpg",
-"../Resources/Images/SlideShow Images/6.jpg",
-"../Resources/Images/SlideShow Images/7.jpg"
+"../Resources/Optimised Images/SlideShow/1-min.jpg",
+"../Resources/Optimised Images/SlideShow/2-min.jpg",
+"../Resources/Optimised Images/SlideShow/3-min.jpg",
+"../Resources/Optimised Images/SlideShow/4-min.jpg",
+"../Resources/Optimised Images/SlideShow/5-min.jpg",
+"../Resources/Optimised Images/SlideShow/6-min.jpg",
+"../Resources/Optimised Images/SlideShow/7-min.jpg"
 
 ]
 
@@ -71,3 +71,5 @@ function nextImage(){
 	curentIndex++;
 	showImage(curentIndex);
 }
+
+
