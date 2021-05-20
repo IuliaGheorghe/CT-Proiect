@@ -1,3 +1,6 @@
+/*stocheaza culori si alte proprietati sub forma de variabile in asa fel incat acestea sa poata fi folosite mai usor pe parcurs
+limiteaza nevoia de copy-paste
+*/
 :root{
 	--favPink:rgb(255, 80, 122);
 	--bgCol:rgba(255,255,255,0.7);
@@ -12,10 +15,12 @@ body{
 	position: relative;
 	height: 100vh;
     font-family: "Futura";
-    text-align: justify;
+    text-align: justify; /*--in lipsa suprascrierii toate textele din pagini vor fi aliniate tip justify*/
 }
 
 #headerCont{
+
+	/*explicatii in index.html*/
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -25,11 +30,10 @@ body{
 
 header{
 	height: 80px;
-    position: relative;
 	justify-content: space-between;
 	background-color: var(--favPink);
 	display: flex;
-	align-items: flex-end;
+	align-items: flex-end; /*--aseaza elementele in partea de jos pe verticala a header-ului; proprietatea se va schimba odata cu micsorarea rezolutiei*/
 	font-size: 35px;
 	color: #fff;
 	padding: var(--headerPaddingTopBottom);
@@ -39,9 +43,9 @@ header{
 	font-weight: bold;
 }
 
-#for-mobile{
+/*#for-mobile{
 	display: none;
-}
+}*/
 
 
 #menu{
@@ -136,7 +140,6 @@ header{
 
 #content{
 	background-color: var(--bgCol)/*rgba(255,255,255,0.7)*/;
-	position: relative;
 	/*margin-top: 100px;*/
 	/*padding: 40px;
 	padding-left: 120px;*/
@@ -156,6 +159,11 @@ header{
 	display: none;
 }
 
+/*
+------------------------------------
+Responsive Web Design
+------------------------------------ 
+*/
 
 @media only screen and (max-width: 1440px){
 

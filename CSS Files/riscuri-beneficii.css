@@ -1,11 +1,14 @@
 
 #balance{
+
+	/*pastreaza pe linie si spatiaza cele doua elemente*/
 	display: flex;
 	justify-content: space-between;
 }
 
 #balance div{
-	width: 48%;
+
+	width: 48%; /*--fiecare element capata o latime delimitata in asa fel incat mereu sa existe o spatiere*/
 	margin-bottom: 30px;
 }
 
@@ -41,7 +44,18 @@ figure img{
 	width: 60vw;
 }
 
+/*
+------------------------------------
+Responsive Web Design
+------------------------------------ 
+*/
+
 @media only screen and (max-width: 1024px){
+
+	/*la aceasta rezolutie cele doua elemente ce contin riscurile si beneficiile se aseaza in coloana pentru a putea fi citite cu usurinta
+	fiecare element recapata o latime de 100% din latimea elementului tip parent
+
+	*/
 
 
 	#balance{

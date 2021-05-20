@@ -1,11 +1,20 @@
+/*Lista, fie de tip ul sau ol are implicit setata o anumita valoare de padding-left.
+In cele de mai jos ne asiguram ca layout-ul paginii nu este influentat de acest padding
+*/
 ul{
 	padding-left: 0;
 }
 
+
+/*Ne asiguram ca eliminam evidentierile aplicate de ul fiecarul element din lista;
+Apoi folosind faptul ca marginile sunt setate in sensul acelor de ceasornic, setam ca deasupra fiecarui element al listei sa existe o margine de 20px iar in parti sa nu existe niciun spatiu*/
+
 li{
 	list-style-type: none;
-	margin: 20px 0;
+	margin: 20px 0 0 0;
 	}
+
+/*Fiecare container de imagine primeste ca background imaginea care evidentiaza partea corpului cercetata*/
 
 .torace{
 	background: url("../Resources/Images/thorax.jpg");
@@ -45,6 +54,7 @@ li{
 	background: url("https://image.2bstronger.com/article/the-human-body/names-of-the-bones-in-the-human-leg-arm-21548/1000.jpg");
 }
 
+
 .image{
 	height: 500px;
 	width: 100%;
@@ -56,6 +66,14 @@ li{
 /*.image:hover{
 	cursor: pointer;
 }*/
+
+
+/*
+
+Element al listei ce contineartea de informatii care initial este ascunsa
+Cand va deveni vizibila, aceasta va ocupa 50% din latimea listei care la randul ei ocupa 100% din #container
+
+*/
 
 li .info{
 	display: none;
@@ -72,6 +90,12 @@ li .info{
 .txt{
 	text-align: justify;
 }
+
+/*
+------------------------------------
+Responsive Web Design
+------------------------------------ 
+*/
 
 @media only screen and (max-width: 768px){
 	.baseName{

@@ -10,53 +10,121 @@
 </head>
 <body>
 
+
+     <!-- 
+      
+      ***********************************************
+      ***********************************************
+
+      Introducere - Ce este tomografia computerizată? 
+
+      ***********************************************
+      ***********************************************
+
+    -->
+
+     <!-- 
+
+       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+      -explicatii pentru structura in index.html  
+
+    -->
+   
+
+    <!-- Meniuri-->
+
     <!-- Mobile Menu -->
 
     <div id="headerCont">
 
-    <header>Ce este tomografia computerizată?<i class="fa fa-bars" aria-hidden="true" onclick="openMobileMenu()"></i></header>
+      <header>
 
-    <div id="for-mobile">
+    <!-- 
+    Diferit fata de structura paginii precedente aici se poate observa si aparitia textului din header care rescrie numele paginii 
     
-    <div id="mobile-menu">
-       <a  href="../index.html">Acasă</a>
-       <a  href="intro.html">Ce este tomografia computerizată?</a>
-       <a  href="componente.html">Componente</a>
-       <a  href="functionare.html">Mecanismul de funcționare</a>
-       <a  href="afectiuni.html">Ce afecțiuni pot fi determinate?</a>
-       <a  href="info.html">Ce trebuie să știi?</a>
-       <a  href="riscuri-beneficii.html" >Beneficii. Riscuri</a>
-    </div>
-    </div>
+    Se schimba atributul de spatiere din display:flex cu justify-content:space-between pentru a pastra cele doua elemente in stanga si dreapta 
+    (la index.html era justify-content:flex-end  - voiam ca butonul de meniu sa fie afisat la final, in dreapta si nu aveam alte elemente intre care sa punem spatiere)
+
+    -->
+
+        Ce este tomografia computerizată?
+      <i class="fa fa-bars" aria-hidden="true" onclick="openMobileMenu()"></i>
+      </header>
+    
+       <div id="mobile-menu">
+          <a  href="../index.html">Acasă</a>
+          <a  href="intro.html">Ce este tomografia computerizată?</a>
+          <a  href="componente.html">Componente</a>
+          <a  href="functionare.html">Mecanismul de funcționare</a>
+          <a  href="afectiuni.html">Ce afecțiuni pot fi determinate?</a>
+          <a  href="info.html">Ce trebuie să știi?</a>
+          <a  href="riscuri-beneficii.html" >Beneficii. Riscuri</a>
+       </div>
     </div>
 
     
 
 	<!-- Menu -->
 	<div id="menu">
-     <a  href="../index.html" onmouseover="menuHover(0)" onmouseout="menuHoverOut(0)"><div class="fa fa-home menuElement" aria-hidden="true"></div><div class="menuElementExp">Acasă</div></a>
-     <a  href="intro.html" onmouseover="menuHover(1)" onmouseout="menuHoverOut(1)"><div class="fa fa-question-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce este tomografia computerizată?</div></a>
-     <a  href="componente.html" onmouseover="menuHover(2)" onmouseout="menuHoverOut(2)"><div class="fa fa-puzzle-piece menuElement" aria-hidden="true"></div><div class="menuElementExp">Componente</div></a>
-     <a  href="functionare.html" onmouseover="menuHover(3)" onmouseout="menuHoverOut(3)"><div class="fa fa-cog menuElement" aria-hidden="true"></div><div class="menuElementExp">Mecanismul de funcționare</div></a>
-     <a  href="afectiuni.html" onmouseover="menuHover(4)" onmouseout="menuHoverOut(4)"><div class="fa fa-medkit menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce afecțiuni pot fi determinate?</div></a>
-     <a  href="info.html" onmouseover="menuHover(5)" onmouseout="menuHoverOut(5)"><div class="fa fa-info-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce trebuie să știi?</div></a>
-     <a  href="riscuri-beneficii.html" onmouseover="menuHover(6)" onmouseout="menuHoverOut(6)"><div class="fa fa-balance-scale menuElement" aria-hidden="true"></div><div class="menuElementExp">Beneficii. Riscuri</div></a>
+     <a  href="../index.html" onmouseover="menuHover(0)" onmouseout="menuHoverOut(0)">
+       <div class="fa fa-home menuElement" aria-hidden="true"></div>
+       <div class="menuElementExp">Acasă</div>
+     </a>
+
+     <a  href="intro.html" onmouseover="menuHover(1)" onmouseout="menuHoverOut(1)">
+       <div class="fa fa-question-circle menuElement" aria-hidden="true"></div>
+       <div class="menuElementExp">Ce este tomografia computerizată?</div>
+     </a>
+
+     <a  href="componente.html" onmouseover="menuHover(2)" onmouseout="menuHoverOut(2)">
+       <div class="fa fa-puzzle-piece menuElement" aria-hidden="true"></div>
+       <div class="menuElementExp">Componente</div>
+     </a>
+
+     <a  href="functionare.html" onmouseover="menuHover(3)" onmouseout="menuHoverOut(3)">
+       <div class="fa fa-cog menuElement" aria-hidden="true"></div>
+       <div class="menuElementExp">Mecanismul de funcționare</div>
+     </a>
+
+     <a  href="afectiuni.html" onmouseover="menuHover(4)" onmouseout="menuHoverOut(4)">
+       <div class="fa fa-medkit menuElement" aria-hidden="true"></div>
+       <div class="menuElementExp">Ce afecțiuni pot fi determinate?</div>
+     </a>
+
+     <a  href="info.html" onmouseover="menuHover(5)" onmouseout="menuHoverOut(5)">
+       <div class="fa fa-info-circle menuElement" aria-hidden="true"></div>
+       <div class="menuElementExp">Ce trebuie să știi?</div>
+     </a>
+
+     <a  href="riscuri-beneficii.html" onmouseover="menuHover(6)" onmouseout="menuHoverOut(6)">
+      <div class="fa fa-balance-scale menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Beneficii. Riscuri</div>
+    </a>
+    
   </div>
 	
    
-	<!-- Content -->
 
   <div id="contentOverlay"></div>
+
+
+  <!-- Content -->
 	<div id="content">
          
+
+         <!-- Aici se afla cele doua casute care definesc topografia cuvantului "tomografie" -->
+
          <div class="topografie">
-         	<div class="topo topo1" onclick="topografie(0)">tomos</div>
-         	<div class="topo topo2" onclick="topografie(1)">graphia</div>
+         	   <div class="topo topo1" onclick="topografie(0)">tomos</div>
+         	   <div class="topo topo2" onclick="topografie(1)">graphia</div>
          </div>
          <p class="infotext"><em>Apasă pe carduri pentru a afla traducerile</em>.</p>
 
          <p>Tomografia Computerizată (CT) este o metodă de diagnosticare care combină razele X cu tehnologia computerizată avansată pentru a reda imagini clare și detaliate ale structurilor interne și organelor corpului. Aceasta a revoluționat medicina permițând observarea unor afecțiuni ce în trecut puteau fi descoperite numai prin intermediul chirurgiei sau autopsiei.</p>
+        
 
+        <!-- #videoCont cuprinde video-ul pentru a permite centrarea acestuia in pagina - pentru aceasta, fiind elementul parinte, lui i-am atasat display-ul tip flex si proprietatile aferente centrarii -->
         <div id="videoCont">
           <video src="../Resources/Optimised Videos/CT Video-Compressed.mp4" autoplay muted controls></video>
         </div>
@@ -64,29 +132,37 @@
 
          <p>Computerul tomograf a fost inventat de doi cercetători în mod independent: inginerul britanic Godfrey Hounsfield (Laboratoarele EMI din Anglia) și fizicianul Allan Cormack, (Universitatea Tufts, Massachusetts). Cei doi au primit premiul Nobel în 1979.</p>
 
-         <div class="t-box godfrey">
-         	<img src="https://cdn.britannica.com/57/21057-050-CB057BB2/Godfrey-N-Hounsfield-1979.jpg"/>
-         	<div class="info-box">
-         		<h1>Godfrey Hounsfield</h1>
-         		<span class="date"> 28 august 1919 – 12 august 2004</span>
-            
-         		<p>A fost un inginer electric englez care a împărțit Premiul Nobel pentru Fiziologie sau Medicină cu Allan McLeod Cormack pentru contribuțiile sale în dezvoltarea tehnicilor de diagnosticare folosind tomografia axială computerizată (conform originalului, Computerized Axial Tomography, sau CAT).</p>
-         		<p>Numele său este dat așa zisei scalei Hounsfield, scală ce folosește metoda de măsurare cantitativă a radiodensității folosite în evaluarea scanărilor CAT. Scala este măsurată în unități de măsură numite unități Hounsfield, având simbolul HF, măsurând - 1000 HF, în cazul aerului, 0 HF, în cazul apei, până la + 1000 HF, în cazul oaselor.</p>
-         	</div>
-         </div>
+         <div id="boxesContainer">
 
-         <div class="t-box allan">
-         	
-         	<div class="info-box">
-         		<h1>Allan McLeod Cormack</h1>
-         		<span class="date"> 23 februarie 1924 – 7 mai 1998</span>
-            
-         		<p>A fost un medic american de origine sud-africană, cunoscut pentru cercetările sale din domeniul tomografiei computerizate. În cadrul Universității din Cape Town, a primit doctoratul în fizică în 1944, ca în anul următor să obțină titlul de Master of Science din partea aceleiași universități.</p>
-         		<p>Cercetările sale s-au înscris în domeniul fizicii particulelor elementare. A manifestat un interes deosebit pentru radiografie și a stabilit fundamentul teoretic al tomografiei computerizate, perioadă în care Godfrey Hounsfield a realizat primul scanner.</p>
-         		<p>În 1990 a primit National Medal of Science. A fost decorat postum (în 2002) cu Ordinul de Mapungubwe din partea Africii de Sud.</p>
-         	</div>
-         	<img src="https://lh3.googleusercontent.com/proxy/lGzLRTvCfbr1GWxwVeRUq5gGZU71MK6TFk2l4iTYeh9lPL40rpI1uvTXh1FFcl9QwF4CKPXSFCxPRqfnsywCtGWXHA3xhsxlddg6XeVTspwAPOVEGJMrLaPZXptd5w=s0-d"/>
-         </div>
+              <!-- Fiecare element din aceasta sectiune este format dintr-o imagine si cateva date (nume, data nasterii si a mortii, descriere)
+              In al doilea element imaginea este pusa la sfarsit pentru a determina o diferenta de layout pe display-ul standard (not mobile-view - >1024 px width)
+              (mai elegant acest layout putea fi format prin atribuirea lui flex-direction:row-reverse pe clasa .allan) -->
+
+              <div class="t-box godfrey">
+                  <img src="https://cdn.britannica.com/57/21057-050-CB057BB2/Godfrey-N-Hounsfield-1979.jpg"/>
+                  <div class="info-box">
+                        <h1>Godfrey Hounsfield</h1>
+                        <span class="date"> 28 august 1919 – 12 august 2004</span>
+                     
+                        <p>A fost un inginer electric englez care a împărțit Premiul Nobel pentru Fiziologie sau Medicină cu Allan McLeod Cormack pentru contribuțiile sale în dezvoltarea tehnicilor de diagnosticare folosind tomografia axială computerizată (conform originalului, Computerized Axial Tomography, sau CAT).</p>
+                        <p>Numele său este dat așa zisei scalei Hounsfield, scală ce folosește metoda de măsurare cantitativă a radiodensității folosite în evaluarea scanărilor CAT. Scala este măsurată în unități de măsură numite unități Hounsfield, având simbolul HF, măsurând - 1000 HF, în cazul aerului, 0 HF, în cazul apei, până la + 1000 HF, în cazul oaselor.</p>
+                  </div>
+              </div>
+         
+                  
+              <div class="t-box allan">
+                  <div class="info-box">
+                        <h1>Allan McLeod Cormack</h1>
+                        <span class="date"> 23 februarie 1924 – 7 mai 1998</span>
+                     
+                        <p>A fost un medic american de origine sud-africană, cunoscut pentru cercetările sale din domeniul tomografiei computerizate. În cadrul Universității din Cape Town, a primit doctoratul în fizică în 1944, ca în anul următor să obțină titlul de Master of Science din partea aceleiași universități.</p>
+                        <p>Cercetările sale s-au înscris în domeniul fizicii particulelor elementare. A manifestat un interes deosebit pentru radiografie și a stabilit fundamentul teoretic al tomografiei computerizate, perioadă în care Godfrey Hounsfield a realizat primul scanner.</p>
+                        <p>În 1990 a primit National Medal of Science. A fost decorat postum (în 2002) cu Ordinul de Mapungubwe din partea Africii de Sud.</p>
+                  </div>
+                  <img src="https://lh3.googleusercontent.com/proxy/lGzLRTvCfbr1GWxwVeRUq5gGZU71MK6TFk2l4iTYeh9lPL40rpI1uvTXh1FFcl9QwF4CKPXSFCxPRqfnsywCtGWXHA3xhsxlddg6XeVTspwAPOVEGJMrLaPZXptd5w=s0-d"/>
+              </div>
+
+        </div>
 
 	</div>
 

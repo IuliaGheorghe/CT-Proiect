@@ -1,12 +1,13 @@
 #slideshowParent{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: column; /*pentru a pastra elementele continute (imaginile+butoane si cercurile) una sub cealalta (by default ar fi fost flex-direction: row care le-ar fi tinut in linie)*/
+	/*pentru centrare pe orizontala*/
 	align-items: center;
 	margin-bottom: 50px;
 }
 
 
+/*contine imaginile si butoanele*/
 #slideshow{
 	width: auto;
 	display: flex;
@@ -25,6 +26,7 @@
     font-size: 50px;
     padding: 40px; 
 }
+
 .fa:hover{
     cursor: pointer;
     color: #aaa;
@@ -51,8 +53,14 @@ ol{
 	list-style-type: none;
 	justify-content: space-between;
 	display: grid;
+
+	/*imparte elementele continute pe coloane care ocupa 32% din latimea ocupata de lista */
     grid-template-columns: 32% 32% 32%;
+
+    /*lasa spatiu de 10px intre linii*/
     grid-row-gap: 10px;
+
+    /*lasa spatiu de 10px intre coloane*/
 	grid-column-gap: 10px;
     margin: 80px 10px 0 10px;
     padding-left: 0;
@@ -62,13 +70,25 @@ li{
 	background-color: #ddd;
 	padding: 30px;
 	display: flex;
+
+	/*centreaza textul pe orizontala si verticala in casuta */
+      /*vom renunta la centrarea pe orizontala in cazul display-urilor de mobil */
+
 	justify-content: center;
 	align-items: center;
+
+	/*#nu permit expansiunea sau restrangerea casutelor la modificarea rezolutiei*/
 	flex-grow: 0;
 	flex-shrink: 1;
 	flex-flow: wrap;
 
 }
+
+/*
+------------------------------------
+Responsive Web Design
+------------------------------------ 
+*/
 
 
 @media only screen and (max-width: 768px){

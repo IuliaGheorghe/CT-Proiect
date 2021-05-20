@@ -1,3 +1,5 @@
+/*contine si centreaza videoclipul pe orizontala*/
+
 #videoCont{
 	display: flex;
 	justify-content: center;
@@ -7,11 +9,17 @@ video{
 	width: 100%;
 }
 
+
+
 .topografie{
+
+	/*pastreaza layout stanga dreapta pentru casutele de topografie*/
 	display: flex;
 	justify-content: space-between;
 	margin: 0px 0 10px 0;
 }
+
+/*formateaza la mod general casutele de topografie (latime, inaltime, centrare- Ox si Oy, culoare text, culoare bg, marime font)*/
 
 .topo{
 	width: 40%;
@@ -28,6 +36,9 @@ video{
 	cursor: pointer;
 }
 
+
+/*textul mic care suregeaza apasarea pe casutele de topografie*/
+
 .infotext{
 	text-align: right;
 	color: #aaa;
@@ -35,12 +46,13 @@ video{
 	margin-bottom: 40px;
 }
 
+
+/*formateaza separat culoarea de bg a primei casute de topografie - suprascrie la .topo*/
 .topo1{
 	background-color: rgb(252,122,153)
 }
 
 p{
-	
 	text-align: justify;
 }
 
@@ -55,19 +67,19 @@ h1{
 }
 
 .t-box{
-	position: relative;
+
+	/*height auto permite marirea containerului in functie de inaltimea imaginii ce se schimba periodic pentru pastrarea ratio-ului in functie de diferite rezolutii*/
 	height: auto;
-	display: flex;
+	display: flex; /*--pastreaza layout-ul in linie*/
 	margin: 60px 0;
 }
 
 .allan{
-	margin-bottom: 0;
+	margin-bottom: 0; /*-- nu mai era nevoie de margine jos intrucat nu mai exista elemente ulterioare*/
 }
 
 .info-box{
-	width: 75%;
-	position: relative;
+	width: 75%;  /*--pentru ca pe aceasta rezolutie imaginea ocupa 25% din width-ul elementului tip parent care la randul sau ocupa 100% din latimea disponibila */
 	background-color: #eee;
 }
 
@@ -75,15 +87,6 @@ img{
 	width: 25%;
 	height:auto;
 }
-
-.info-box p:nth-child(2){
-	margin-bottom: 0;
-}
-
-.info-box p:nth-child(4){
-	margin-top: 50px;
-}
-
 
 /*hr{
 	position: absolute;
@@ -96,6 +99,13 @@ img{
 	padding-right: 30px;
 	border-bottom: 1px solid #000;
 }
+
+
+/*
+------------------------------------
+Responsive Web Design
+------------------------------------ 
+*/
 
 
 @media only screen and (max-width: 1440px){

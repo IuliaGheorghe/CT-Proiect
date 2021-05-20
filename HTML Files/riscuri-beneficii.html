@@ -10,13 +10,40 @@
 </head>
 <body>
 
-  <!-- Mobile Menu -->
+  <!-- 
+      
+      ***********************************************
+      ***********************************************
+
+      Riscuri si Beneficii
+
+      ***********************************************
+      ***********************************************
+
+    -->
+
+     <!-- 
+
+       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+      - explicatii pentru structura in index.html (vezi si intro.html pentru header) 
+
+    -->
+   
+
+    <!-- Meniuri-->
+
+
+    <!-- Mobile Menu -->
 
 
   <div id="headerCont">
-  <header>Beneficii și riscuri.<i class="fa fa-bars" aria-hidden="true" onclick="openMobileMenu()"></i></header>
+    
+  <header>
+    Beneficii și riscuri.
+    <i class="fa fa-bars" aria-hidden="true" onclick="openMobileMenu()"></i>
+  </header>
 
-  <div id="for-mobile">
   <div id="mobile-menu">
      <a  href="../index.html">Acasă</a>
      <a  href="intro.html">Ce este tomografia computerizată?</a>
@@ -27,55 +54,87 @@
      <a  href="riscuri-beneficii.html" >Beneficii. Riscuri</a>
   </div>
   </div>
-  </div>
 
 	<!-- Menu -->
 	<div id="menu">
-     <a  href="../index.html" onmouseover="menuHover(0)" onmouseout="menuHoverOut(0)"><div class="fa fa-home menuElement" aria-hidden="true"></div><div class="menuElementExp">Acasă</div></a>
-     <a  href="intro.html" onmouseover="menuHover(1)" onmouseout="menuHoverOut(1)"><div class="fa fa-question-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce este tomografia computerizată?</div></a>
-     <a  href="componente.html" onmouseover="menuHover(2)" onmouseout="menuHoverOut(2)"><div class="fa fa-puzzle-piece menuElement" aria-hidden="true"></div><div class="menuElementExp">Componente</div></a>
-     <a  href="functionare.html" onmouseover="menuHover(3)" onmouseout="menuHoverOut(3)"><div class="fa fa-cog menuElement" aria-hidden="true"></div><div class="menuElementExp">Mecanismul de funcționare</div></a>
-     <a  href="afectiuni.html" onmouseover="menuHover(4)" onmouseout="menuHoverOut(4)"><div class="fa fa-medkit menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce afecțiuni pot fi determinate?</div></a>
-     <a  href="info.html" onmouseover="menuHover(5)" onmouseout="menuHoverOut(5)"><div class="fa fa-info-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce trebuie să știi?</div></a>
-     <a  href="riscuri-beneficii.html" onmouseover="menuHover(6)" onmouseout="menuHoverOut(6)"><div class="fa fa-balance-scale menuElement" aria-hidden="true"></div><div class="menuElementExp">Beneficii. Riscuri</div></a>
+     
+    <a  href="../index.html" onmouseover="menuHover(0)" onmouseout="menuHoverOut(0)">
+      <div class="fa fa-home menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Acasă</div>
+    </a>
+
+    <a  href="intro.html" onmouseover="menuHover(1)" onmouseout="menuHoverOut(1)">
+      <div class="fa fa-question-circle menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Ce este tomografia computerizată?</div>
+    </a>
+
+    <a  href="componente.html" onmouseover="menuHover(2)" onmouseout="menuHoverOut(2)">
+      <div class="fa fa-puzzle-piece menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Componente</div>
+    </a>
+
+    <a  href="functionare.html" onmouseover="menuHover(3)" onmouseout="menuHoverOut(3)">
+      <div class="fa fa-cog menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Mecanismul de funcționare</div>
+    </a>
+
+    <a  href="afectiuni.html" onmouseover="menuHover(4)" onmouseout="menuHoverOut(4)">
+      <div class="fa fa-medkit menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Ce afecțiuni pot fi determinate?</div>
+    </a>
+
+    <a  href="info.html" onmouseover="menuHover(5)" onmouseout="menuHoverOut(5)">
+      <div class="fa fa-info-circle menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Ce trebuie să știi?</div>
+    </a>
+
+    <a  href="riscuri-beneficii.html" onmouseover="menuHover(6)" onmouseout="menuHoverOut(6)">
+      <div class="fa fa-balance-scale menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Beneficii. Riscuri</div>
+    </a>
+
   </div>
 
   
-	
-	<!-- Content -->
   <div id="contentOverlay"></div>
+
+  <!-- Content -->
 	<div id="content">
+
+   <!--  Id-ul #balance cuprinde cele doua div-uri cu beneficii si riscuri pentru a le putea alinia corespunator in pagina, folosind display:flex -->
+
     <div id="balance">
-      <div>
-       <p>Beneficii:</p><br>
-       <ol>
-       <li> CT-ul poate fi utilizat aproape în orice domeniu și pentru orice țesut;</li>
-       <li> Poate realiza o reconstrucție 3D a oaselor;</li>
-       <li> Poate face chiar și o colonoscopie virtuală sau analiza în detaliu inima;</li>
-       <li> În situații de urgență, poate detecta rapid leziuni interne, mai ales după un traumatism complex.</li>
-       <li> Poate face radiografii din orice unghi, folosind un sistem complex de detectori și computere;</li>
-       </ol>
-     </div>
 
-      <div>
-       <p>Riscuri:</p><br>
-             <ol>
-             <li> Substanța de contrast poate determina o senzație de căldură și apariția unui gust metalic în gură, iar unii pacienți pot avea dureri de cap sau stare de greață;</li>
-             <li> Substanța de contrast poate provoca reacții alergice;</li>
-             <li> Este o metodă de diagnostic iradiantă (totusi, aici trebuie menționat că se folosește doza minimă de radiație)</li>
-             <li> Risurile de dezvoltare a cancerului, deși sunt mici, pot crește în timp în cazul repetărilor multiple ale radiografiilor
-                    (riscurile sunt crescute în general în rândul copiilor, în special în cazul intervențiilor la nivelul pieptului sau abdomenului) </li>
-             </ol>
-      </div>
+    <div>
+      <p>Beneficii:</p><br>
+      <ol>
+          <li> CT-ul poate fi utilizat aproape în orice domeniu și pentru orice țesut;</li>
+          <li> Poate realiza o reconstrucție 3D a oaselor;</li>
+          <li> Poate face chiar și o colonoscopie virtuală sau analiza în detaliu inima;</li>
+          <li> În situații de urgență, poate detecta rapid leziuni interne, mai ales după un traumatism complex.</li>
+          <li> Poate face radiografii din orice unghi, folosind un sistem complex de detectori și computere;</li>
+      </ol>
+    </div>
 
+    <div>
+      <p>Riscuri:</p><br>
+      <ol>
+          <li> Substanța de contrast poate determina o senzație de căldură și apariția unui gust metalic în gură, iar unii pacienți pot avea dureri de cap sau stare de greață;</li>
+          <li> Substanța de contrast poate provoca reacții alergice;</li>
+          <li> Este o metodă de diagnostic iradiantă (totusi, aici trebuie menționat că se folosește doza minimă de radiație)</li>
+          <li> Risurile de dezvoltare a cancerului, deși sunt mici, pot crește în timp în cazul repetărilor multiple ale radiografiilor
+               (riscurile sunt crescute în general în rândul copiilor, în special în cazul intervențiilor la nivelul pieptului sau abdomenului) </li>
+      </ol>
+    </div>
 
     </div>
 
+
     <p><b>Limitele tomografiei computerizate:</b></p>
-      <ul>
+    <ul>
         <li>Examinarea CT este contraindicată femeilor însărcinate.</li>
         <li>Anumite detalii din articulații si coloana vertebrală sunt mai bine vizibile cu ajutorul RMN-ului.</li>
-      </ul>
+    </ul>
 
    <!-- <figure><img src="https://www.govloop.com/wp-content/uploads/2016/02/rockbalance.jpeg"/></figure> -->
 	</div>

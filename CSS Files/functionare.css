@@ -1,3 +1,6 @@
+/*Lista contine cele doua principii de functionare ale computerului tomograf, si initial isi propune sa le pastreze pe ambele pe aceeasi linie in parti diferite (stanga/dreapta) ale containerului - prin atributele de display si justify-content
+*/
+
 ol{
 	display: flex;
 	justify-content: space-between;
@@ -5,11 +8,16 @@ ol{
 	padding-left: 0; 
 }
 
+/*
+Aici, avand sub fiecare mecanism si o linie orizontala, pentru a mentine layout-ul am setat un nou display:flex, dar cu directia de tip coloana*/
+
 ol li{
 	display: flex;
 	flex-direction: column;
-	font-weight: bold;
 	justify-content: space-between;
+	font-weight: bold;
+
+	/*de asemenea am eliminat evidentierile specifice listei*/
 	list-style-type: none;
 	width: 45%;
 	padding: 50px 0 30px 0;
@@ -20,6 +28,7 @@ ol p{
 }
 
 hr{
+	/*Linia orizontala va ocupa 100% din latimea containerului care, la randul sau, ocupa 45% din intreaga latime a id-ului #content (vezi in style.css proprietatile lui #content)*/
 	width:100%;
 }
 
@@ -37,7 +46,21 @@ figure{
 	margin: 40px;
 }
 
+
+/*
+------------------------------------
+Responsive Web Design
+------------------------------------ 
+*/
+
+
 @media only screen and (max-width: 768px){
+
+    /*Pe display-uri cu rezoltii mai mici decat cele de tableta (si tableta inclusiv), am setat ca cele doua mecanisme sa apara una sub alta din lipsa de spatiu si pentru un UX mai bun;
+    Am facut acest lucru folosind flex-direction:column si am centrat elementele pe orizontala in pagina cu align-items:center
+
+    (cand se modifica flex-direction din row -care este implicit- in colomn atribute precum justify-content si align-items isi inverseaza proprietatile)*/
+
 	ol{
 		flex-direction: column;
 		align-items:  center;
@@ -61,14 +84,10 @@ figure{
 }
 
 @media only screen and (max-width: 425px){
-	ol{
-		flex-direction: column;
-		align-items:  center;
-	}
+	
 
 	ol li{
 		width: 100%;
 		padding: 0;
-		font-weight: 600;
 	}
 }

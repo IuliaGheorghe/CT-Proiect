@@ -1,4 +1,6 @@
 li{
+
+	/*am dorit ca in partea de jos a fiecarui element din lista, dar si fata de indexul fiecarei referinte sa existe o spatiere de 20px*/
 	padding: 0 0 20px 20px;
 
 }
@@ -6,10 +8,10 @@ li{
 a{
 	text-decoration: none;
 	color: #000;
-	word-break: break-all;
+	word-break: break-all; /*--linkurile sunt considerate cuvinte foarte lungi si pot stricat layout-ul intrucat by-default browserul nu le va desparti niciodata; proprietate permite despartirea "cuvantului-link" in orice stadiu in care limitele spatiale ale listei ar putea fi depasite*/
 }
 
 a:hover{
 	cursor: pointer;
-	color: var(--favPink);
+	color: var(--favPink); /*--culoarea rgba specifica lui roz, stocata in variablia*/
 }

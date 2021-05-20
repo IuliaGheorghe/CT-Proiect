@@ -18,18 +18,25 @@ Code Without Grid - Easier Version
 
 */
 
+/*
+  Pentru #content am adaugat peste proprietatile din style.css display-ul de tip flex impreuna cu proprietatile de centrare atat pe orizontala, cat si pe verticala
+  Totodata, am suprascris padingul cu padding:0 pentru a evita spatiul care pe homepage nu ar fi fost necesar
+  Pentru ca alinierea pe verticala sa poata fi realizata, iar containerul sa ocupe intreaga dimensiune a viewportului am specificat si inaltimea height:100%; 
+
+*/ 
+
 #content{
-    padding: 0;
+	padding: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
-	left:0;
-	right: 0;
-	top:0;
-	bottom: 0;
+	height: 100%;
 	
 }
+
+/*Pe HomePage headerul este doar formal, fiind transparent (utilizat pentru stocarea barelor de meniu tip hamburger ce se activeaza la rezolutii mai mici)
+Pentru a avea iconita de meniu situata in partea dreapta (nu in centru cum ar fi ramas cu proprietatile din style.css in lipsa altor elemente pe header) am schimbat justify-content:flex-end
+Acesta muta elementul la finalul chenarului, de aceasta data pe orizontala intrucat directia implicita a display-ului flex este pe Ox*/
 
 header{
 	background-color: transparent;
@@ -37,10 +44,23 @@ header{
 }
 
 
+/*#container contine cele doua parti #above si #bottom-part
+#above contine literele, linia verticala si textele
+#bottom-part contine un spatiu gol adaugat doar pentru pastrarea layout-ului intr-un mod mai simplu si butonul de afla mai multe
+Intrucat cele doua parti trebuie situate una sub cealalta am setat flex-direction:column */
+
 #container{
 	display: flex;
+	flex-direction: column;
 	color: rgb(90,90,90);
 
+}
+
+/*
+Aici, fara display flex, elementele ar fi fost situate una sub cealalta (literele si linia sus - textul jos)*/
+
+#above{
+	display: flex;
 }
 
 #letters-container{
@@ -58,6 +78,8 @@ header{
    font-size: 70px;
    margin: 0;
    margin-right: 30px;
+
+   /*Fara aceasta formatare la line-height literele tot ar fi pastrat un spatiu implicit nedorit, chiar si cu padding: 0*/
    line-height: 0.8;
 }
 
@@ -74,10 +96,14 @@ p{
 	margin: 0;
 }
 
+/*Modificari pentru primul paragraf (text: Computerul Tomograf) - se vrea a fi mai mare decat al doilea pe rezolutii standard*/
+
 p:nth-child(1){
 	font-size: 50px;
 	line-height: 0.8;
 }
+
+/*Modificari pentru al doilea paragraf (text: O perspectiva completa) */
 
 p:nth-child(2){
 	font-size: 30px;
@@ -116,6 +142,8 @@ button:hover{
 
 
 
+/*sectiunea pentru butonul de referinte*/
+
 #ref{
 	position: absolute;
     display: flex;
@@ -145,120 +173,10 @@ button:hover{
 }
 
 
-
-/* 
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-Code with grid - Old version 
-
-
-*/
-
-/*body{
-	display: grid;
-	grid-template-columns: 75px auto;
-}
-
-#content{
-	display: grid;
-    grid-template-rows: 25% 20% auto 25%;
-    grid-template-columns: 30% 100px 5px auto 5%;
-	position: absolute;
-	z-index: 1;
-	margin-top: 0;
-	padding: 0;
-	left:0;
-	right: 0;
-	top:0;
-	bottom: 0;
-	
-}
-
-#content{
-	position: absolute;
-	z-index: 1;
-	width: 100vw;
-	height: 100vh;
-   margin-top: 0;
-   
-
-}
-
-.grid {
-	background-color: red;
-	border: 2px solid #000;
-}
-
-.vertical-text-container{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: flex-end;
-}
-
-.vertical-text-container span{
-	line-height: 75px;
-    height: 75px;
-	margin: 0;
-	padding-right: 30px;
-	font-size: 70px;
-	color: rgb(90,90,90);
-
-}
-
-.vertical-line{
-	width: 5px;
-	height: 100%;
-	background-color: rgb(90,90,90);
-}
-
-.text-container{
-	display: flex;
-	height: 100%;
-	flex-direction: column;
-	justify-content: space-between;
-
-}
-
-.text-container p{
-	margin: 0 30px;
-}
-
-.text-container p:nth-child(1){
-	font-size: 50px;
-	color: rgb(90,90,90);
-}
-
-.text-container p:nth-child(2){
-	font-size: 25px;
-	color: rgb(255,80,122);
-}
-
-.bttn-container{
-	display: flex;
-	align-items: flex-end;
-}
-
-.bttn-container button{
-	margin-left: 20px;
-	padding: 15px;
-	font-size: 20px;
-	font-family: "Futura";
-	color: #fff;
-	text-align: center;
-	width: 280px;
-	background-color: rgb(255, 80, 122);
-	border: 1px solid rgb(255, 80, 122);
-}
-
-
-.bttn-container button:hover{
-	
-	background-color: rgb(255, 62, 108);
-	border: 1px solid rgb(255, 62, 108);
-	cursor: pointer;
-}
+/*
+------------------------------------
+Responsive Web Design
+------------------------------------ 
 */
 
 
@@ -391,3 +309,123 @@ button{
 		font-size: 16px;
 	}
 }
+
+
+
+
+/* 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Code with grid - Old version 
+
+
+*/
+
+/*body{
+	display: grid;
+	grid-template-columns: 75px auto;
+}
+
+#content{
+	display: grid;
+    grid-template-rows: 25% 20% auto 25%;
+    grid-template-columns: 30% 100px 5px auto 5%;
+	position: absolute;
+	z-index: 1;
+	margin-top: 0;
+	padding: 0;
+	left:0;
+	right: 0;
+	top:0;
+	bottom: 0;
+	
+}
+
+#content{
+	position: absolute;
+	z-index: 1;
+	width: 100vw;
+	height: 100vh;
+   margin-top: 0;
+   
+
+}
+
+.grid {
+	background-color: red;
+	border: 2px solid #000;
+}
+
+.vertical-text-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.vertical-text-container span{
+	line-height: 75px;
+    height: 75px;
+	margin: 0;
+	padding-right: 30px;
+	font-size: 70px;
+	color: rgb(90,90,90);
+
+}
+
+.vertical-line{
+	width: 5px;
+	height: 100%;
+	background-color: rgb(90,90,90);
+}
+
+.text-container{
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.text-container p{
+	margin: 0 30px;
+}
+
+.text-container p:nth-child(1){
+	font-size: 50px;
+	color: rgb(90,90,90);
+}
+
+.text-container p:nth-child(2){
+	font-size: 25px;
+	color: rgb(255,80,122);
+}
+
+.bttn-container{
+	display: flex;
+	align-items: flex-end;
+}
+
+.bttn-container button{
+	margin-left: 20px;
+	padding: 15px;
+	font-size: 20px;
+	font-family: "Futura";
+	color: #fff;
+	text-align: center;
+	width: 280px;
+	background-color: rgb(255, 80, 122);
+	border: 1px solid rgb(255, 80, 122);
+}
+
+
+.bttn-container button:hover{
+	
+	background-color: rgb(255, 62, 108);
+	border: 1px solid rgb(255, 62, 108);
+	cursor: pointer;
+}
+*/
+
+

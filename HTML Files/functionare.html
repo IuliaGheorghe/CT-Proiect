@@ -10,12 +10,38 @@
 </head>
 <body>
 
-	<!-- Mobile Menu -->
+	<!-- 
+      
+      ***********************************************
+      ***********************************************
+
+      Funcționare
+
+      ***********************************************
+      ***********************************************
+
+    -->
+
+     <!-- 
+
+       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+      - explicatii pentru structura in index.html (vezi si intro.html pentru header) 
+
+    -->
+   
+
+    <!-- Meniuri-->
+
+
+    <!-- Mobile Menu -->
 
   <div id="headerCont">
-  <header>Care este modul de funcționare al unui CT?<i class="fa fa-bars" aria-hidden="true" onclick="openMobileMenu()"></i></header>
+  <header>
+  	Care este modul de funcționare al unui CT?
+  	<i class="fa fa-bars" aria-hidden="true" onclick="openMobileMenu()"></i>
+  </header>
 
-  <div id="for-mobile">
   <div id="mobile-menu">
      <a  href="../index.html">Acasă</a>
      <a  href="intro.html">Ce este tomografia computerizată?</a>
@@ -26,65 +52,99 @@
      <a  href="riscuri-beneficii.html" >Beneficii. Riscuri</a>
   </div>
   </div>
-  </div>
     
 	<!-- Menu -->
 	<div id="menu">
-		 <a  href="../index.html" onmouseover="menuHover(0)" onmouseout="menuHoverOut(0)"><div class="fa fa-home menuElement" aria-hidden="true"></div><div class="menuElementExp">Acasă</div></a>
-		 <a  href="intro.html" onmouseover="menuHover(1)" onmouseout="menuHoverOut(1)"><div class="fa fa-question-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce este tomografia computerizată?</div></a>
-		 <a  href="componente.html" onmouseover="menuHover(2)" onmouseout="menuHoverOut(2)"><div class="fa fa-puzzle-piece menuElement" aria-hidden="true"></div><div class="menuElementExp">Componente</div></a>
-		 <a  href="functionare.html" onmouseover="menuHover(3)" onmouseout="menuHoverOut(3)"><div class="fa fa-cog menuElement" aria-hidden="true"></div><div class="menuElementExp">Mecanismul de funcționare</div></a>
-		 <a  href="afectiuni.html" onmouseover="menuHover(4)" onmouseout="menuHoverOut(4)"><div class="fa fa-medkit menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce afecțiuni pot fi determinate?</div></a>
-		 <a  href="info.html" onmouseover="menuHover(5)" onmouseout="menuHoverOut(5)"><div class="fa fa-info-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce trebuie să știi?</div></a>
-		 <a  href="riscuri-beneficii.html" onmouseover="menuHover(6)" onmouseout="menuHoverOut(6)"><div class="fa fa-balance-scale menuElement" aria-hidden="true"></div><div class="menuElementExp">Beneficii. Riscuri</div></a>
+		 <a  href="../index.html" onmouseover="menuHover(0)" onmouseout="menuHoverOut(0)">
+		 	<div class="fa fa-home menuElement" aria-hidden="true"></div>
+		 	<div class="menuElementExp">Acasă</div>
+		 </a>
+
+		 <a  href="intro.html" onmouseover="menuHover(1)" onmouseout="menuHoverOut(1)">
+		 	<div class="fa fa-question-circle menuElement" aria-hidden="true"></div>
+		 	<div class="menuElementExp">Ce este tomografia computerizată?</div>
+		 </a>
+
+		 <a  href="componente.html" onmouseover="menuHover(2)" onmouseout="menuHoverOut(2)">
+		 	<div class="fa fa-puzzle-piece menuElement" aria-hidden="true"></div>
+		 	<div class="menuElementExp">Componente</div>
+		 </a>
+
+		 <a  href="functionare.html" onmouseover="menuHover(3)" onmouseout="menuHoverOut(3)">
+		 	<div class="fa fa-cog menuElement" aria-hidden="true"></div>
+		 	<div class="menuElementExp">Mecanismul de funcționare</div>
+		 </a>
+
+		 <a  href="afectiuni.html" onmouseover="menuHover(4)" onmouseout="menuHoverOut(4)">
+		 	<div class="fa fa-medkit menuElement" aria-hidden="true"></div>
+		 	<div class="menuElementExp">Ce afecțiuni pot fi determinate?</div>
+		 </a>
+
+		 <a  href="info.html" onmouseover="menuHover(5)" onmouseout="menuHoverOut(5)">
+		 	<div class="fa fa-info-circle menuElement" aria-hidden="true"></div>
+		 	<div class="menuElementExp">Ce trebuie să știi?</div>
+		 </a>
+
+		 <a  href="riscuri-beneficii.html" onmouseover="menuHover(6)" onmouseout="menuHoverOut(6)">
+		 	<div class="fa fa-balance-scale menuElement" aria-hidden="true"></div>
+		 	<div class="menuElementExp">Beneficii. Riscuri</div>
+		 </a>
+
 	</div>
 
 	
 	
-	<!-- Content -->
+	
 	<div id="contentOverlay"></div>
+
+	<!-- Content -->
 	<div id="content">
 		<p>Funcționarea CT se bazează pe două principii: </p>
         <ol>
         	<li> <p>Măsurarea atenuării unui fascicul de raze X ce traversează un corp și calculul coeficientului său de atenuare.</p><hr></li>
             <li> <p>Reconstrucția imaginii unui obiect plecând de la proiecțiile sale diferite.</p> <hr> </li>
-        </ol>
-            <br>
+        </ol><br>
+
+
+        <!-- Tagurile <span> au fost introduse in mijlocul paragrafului pentru a permite evidentierea unei singure portiuni din text (prin intermediul clasei underline care in fisierul functionare.css - ../CSS Files/fnctionare.css - primeste atributul text-decoration:underline). Am folosit span intrucat acesta, by default are setat un display de tip inline si nu strica structura textului. -->
+
         <p>Planul de secțiune pentru majoritatea structurilor investigate este cel transversal sau axial. </p>
         <p>În inelul ce reprezintă brațul tomografului se află un <b>emițător de raze X</b>, iar în partea opusă acestuia se regăsește <b>un rând de detectori</b> al căror rol este de <span class="underline">a recepta energia fotonică ce a traversat corpul uman și de a o transforma în energie luminoasă</span>. Energia luminoasă este ulterior transformată în <span class="underline">semnale electrice</span> de o <b>fotodiodă</b>. Semnalele, fiind digitalizate sunt transmise unui <b>procesor de imagini</b>, în acest mod construindu-se imaginea pe baza unui număr mare de măsurători. </p>
 
-        <figure><img src="https://thoracickey.com/wp-content/uploads/2016/07/A140935_2_En_2_Fig3_HTML.jpg" /></figure>
+        <figure>
+        	<img src="https://thoracickey.com/wp-content/uploads/2016/07/A140935_2_En_2_Fig3_HTML.jpg" />
+        </figure>
 
-        <p><b>Brațul tomografului</b> se mișcă de-a lungul corpului pentru a mapa întreg organul cerut, iar emițătorul și detectoarele se învârt în interiorul brațului pentru a surprinde din diverse unghiuri acțiunea, conducând la studierea unei zone din mai multe direcții și la obținerea unor rezultate de o calitate mai bună, la o rezoluție crescută.</p>
+       <p><b>Brațul tomografului</b> se mișcă de-a lungul corpului pentru a mapa întreg organul cerut, iar emițătorul și detectoarele se învârt în interiorul brațului pentru a surprinde din diverse unghiuri acțiunea, conducând la studierea unei zone din mai multe direcții și la obținerea unor rezultate de o calitate mai bună, la o rezoluție crescută.</p>
        <p>Razele X sunt absorbite diferit de țesuturile prin care trec, astfel încât la detectorii din partea opusă ajung într-un număr mai mare sau mai mic. Computerul compară absorbția razelor de la detectorii vecini și își dă astfel seama mai bine de formă internă și neregularitățile diverselor organe sau țesuturi. </p>
        <p>Uneori, pentru vizualizarea mai clară a țesuturilor este necesară administrarea unei <b>substanțe de contrast</b>. În tomografia computerizată cel mai frecvent se utilizează <span class="underline">substanțe de contrast iodate</span>.</p>
 
        <h3>Substanța de contrast: </h3>
-	<p>Substanțele de contrast au rolul de a determina mărirea contrastului natural al vaselor sanguine și al organelor interne, rezultând astfel un diagnostic mai corect. Acestea sunt folosite în toate metodele de radio-imagistică (radiologie, ecografie, CT, RMN) și se administrează per os sau intravascular.</p>
-	<p>În CT se utilizează substanțe de contrast pozitive (cel mai des fiind folosite cele pe bază de iod), pentru opacificarea vaselor sanguine, căilor biliare/excretorii urinare, articulațiilor și canalului rahidian. Această substanță este incolora, hidrosolubilă și stabilă în condițiile adecvate.</p>
+	   <p>Substanțele de contrast au rolul de a determina mărirea contrastului natural al vaselor sanguine și al organelor interne, rezultând astfel un diagnostic mai corect. Acestea sunt folosite în toate metodele de radio-imagistică (radiologie, ecografie, CT, RMN) și se administrează per os sau intravascular.</p>
+	   <p>În CT se utilizează substanțe de contrast pozitive (cel mai des fiind folosite cele pe bază de iod), pentru opacificarea vaselor sanguine, căilor biliare/excretorii urinare, articulațiilor și canalului rahidian. Această substanță este incolora, hidrosolubilă și stabilă în condițiile adecvate.</p>
 	
 
-	<h3>Diferențe între CT și RMN:</h3>
-	<ul>
-		<li>Principala diferență dintre cele două este reprezentată de tehnologia utilizată. Spre deosebire de CT, care utilizează razele
-X, RMN-ul folosește o combinație între undele radio si câmpul magnetic pentru a obține o imagine a suprafețelor dorite.</li>
-		<li>Spre deosebire de RMN, datorită razelor X, CT-ul utilizează radiații.</li>
-		<li>Scanările CT sunt rapide și nedureroase, în timp ce scanările RMN sunt zgomotoase, de lungă durată și pot provoca
-anxietate și claustrofobie.</li>
-	</ul>
+	   <h3>Diferențe între CT și RMN:</h3>
+	   <ul>
+	   	  <li>Principala diferență dintre cele două este reprezentată de tehnologia utilizată. Spre deosebire de CT, care utilizează razele
+	   	  X, RMN-ul folosește o combinație între undele radio si câmpul magnetic pentru a obține o imagine a suprafețelor dorite.</li>
+	   	  <li>Spre deosebire de RMN, datorită razelor X, CT-ul utilizează radiații.</li>
+	   	  <li>Scanările CT sunt rapide și nedureroase, în timp ce scanările RMN sunt zgomotoase, de lungă durată și pot provoca
+	   	  anxietate și claustrofobie.</li>
+	   </ul>
 
-	<h3>Diferențe între CT și ecografie:</h3>
-	<ul>
-		<li>Asemenea RMN-ului, ecografia nu utilizează radiații.</li>
-		<li>CT-ul are anumite riscuri de apariție a malformațiilor fetale, spre deosebire de ecografie care nu prezintă riscuri pentru
-femeile însărcinate.</li>
-		<li>Scanarea CT creează o imagine 3D a structurii dorite, în timp ce ecografia poate forma imagini 2D, 3D sau chiar 4D.</li>
-		<li>Ecografia utilizează o undă sonoră produsă în impulsuri scurte la frecvența dorită și se focalizează pe regiunea de interes
-din corp.</li>
-        <li>Ambele metode sunt de scurta durata, scanarea CT fiind puțin mai lungă decât ecografia.</li>
-        <li>Scanarea CT este mai utilizată în evidențierea tumorilor, leziunilor sau anomaliilor, în timp ce ecografia este mai mult
-utilizată pentru diagnosticare, vizualizând mușchii, tendoanele sau organele interne și pentru determinarea leziunilor.</li>
-	</ul>
+	   <h3>Diferențe între CT și ecografie:</h3>
+	   <ul>
+	   	  <li>Asemenea RMN-ului, ecografia nu utilizează radiații.</li>
+	   	  <li>CT-ul are anumite riscuri de apariție a malformațiilor fetale, spre deosebire de ecografie care nu prezintă riscuri pentru
+	   	  femeile însărcinate.</li>
+	   	  <li>Scanarea CT creează o imagine 3D a structurii dorite, în timp ce ecografia poate forma imagini 2D, 3D sau chiar 4D.</li>
+	   	  <li>Ecografia utilizează o undă sonoră produsă în impulsuri scurte la frecvența dorită și se focalizează pe regiunea de interes
+	   	  din corp.</li>
+	   	  <li>Ambele metode sunt de scurta durata, scanarea CT fiind puțin mai lungă decât ecografia.</li>
+	   	  <li>Scanarea CT este mai utilizată în evidențierea tumorilor, leziunilor sau anomaliilor, în timp ce ecografia este mai mult
+	   	  utilizată pentru diagnosticare, vizualizând mușchii, tendoanele sau organele interne și pentru determinarea leziunilor.</li>
+	   </ul>
 
 	
 

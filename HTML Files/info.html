@@ -10,13 +10,39 @@
 </head>
 <body>
 
-  <!-- Mobile Menu -->
+  <!-- 
+      
+      ***********************************************
+      ***********************************************
+
+      Informatii. Ce trebuie să știi?
+
+      ***********************************************
+      ***********************************************
+
+    -->
+
+     <!-- 
+
+       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+      - explicatii pentru structura in index.html (vezi si intro.html pentru header) 
+
+    -->
+   
+
+    <!-- Meniuri-->
+
+
+    <!-- Mobile Menu -->
 
   <div id="headerCont">
 
-  <header>Ce trebuie să știe pacientul înaintea efectuării unui CT?<i class="fa fa-bars" aria-hidden="true" onclick="openMobileMenu()"></i></header>
+  <header>
+    Ce trebuie să știe pacientul înaintea efectuării unui CT?
+    <i class="fa fa-bars" aria-hidden="true" onclick="openMobileMenu()"></i>
+  </header>
 
-  <div id="for-mobile">
   <div id="mobile-menu">
      <a  href="../index.html">Acasă</a>
      <a  href="intro.html">Ce este tomografia computerizată?</a>
@@ -27,38 +53,90 @@
      <a  href="riscuri-beneficii.html" >Beneficii. Riscuri</a>
   </div>
   </div>
-  </div>
 
 	<!-- Menu -->
 	<div id="menu">
-     <a  href="../index.html" onmouseover="menuHover(0)" onmouseout="menuHoverOut(0)"><div class="fa fa-home menuElement" aria-hidden="true"></div><div class="menuElementExp">Acasă</div></a>
-     <a  href="intro.html" onmouseover="menuHover(1)" onmouseout="menuHoverOut(1)"><div class="fa fa-question-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce este tomografia computerizată?</div></a>
-     <a  href="componente.html" onmouseover="menuHover(2)" onmouseout="menuHoverOut(2)"><div class="fa fa-puzzle-piece menuElement" aria-hidden="true"></div><div class="menuElementExp">Componente</div></a>
-     <a  href="functionare.html" onmouseover="menuHover(3)" onmouseout="menuHoverOut(3)"><div class="fa fa-cog menuElement" aria-hidden="true"></div><div class="menuElementExp">Mecanismul de funcționare</div></a>
-     <a  href="afectiuni.html" onmouseover="menuHover(4)" onmouseout="menuHoverOut(4)"><div class="fa fa-medkit menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce afecțiuni pot fi determinate?</div></a>
-     <a  href="info.html" onmouseover="menuHover(5)" onmouseout="menuHoverOut(5)"><div class="fa fa-info-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce trebuie să știi?</div></a>
-     <a  href="riscuri-beneficii.html" onmouseover="menuHover(6)" onmouseout="menuHoverOut(6)"><div class="fa fa-balance-scale menuElement" aria-hidden="true"></div><div class="menuElementExp">Beneficii. Riscuri</div></a>
+     
+    <a  href="../index.html" onmouseover="menuHover(0)" onmouseout="menuHoverOut(0)">
+      <div class="fa fa-home menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Acasă</div>
+    </a>
+
+    <a  href="intro.html" onmouseover="menuHover(1)" onmouseout="menuHoverOut(1)">
+      <div class="fa fa-question-circle menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Ce este tomografia computerizată?</div>
+    </a>
+
+    <a  href="componente.html" onmouseover="menuHover(2)" onmouseout="menuHoverOut(2)">
+      <div class="fa fa-puzzle-piece menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Componente</div>
+    </a>
+
+    <a  href="functionare.html" onmouseover="menuHover(3)" onmouseout="menuHoverOut(3)">
+      <div class="fa fa-cog menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Mecanismul de funcționare</div>
+    </a>
+
+    <a  href="afectiuni.html" onmouseover="menuHover(4)" onmouseout="menuHoverOut(4)">
+      <div class="fa fa-medkit menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Ce afecțiuni pot fi determinate?</div>
+    </a>
+
+    <a  href="info.html" onmouseover="menuHover(5)" onmouseout="menuHoverOut(5)">
+      <div class="fa fa-info-circle menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Ce trebuie să știi?</div>
+    </a>
+
+    <a  href="riscuri-beneficii.html" onmouseover="menuHover(6)" onmouseout="menuHoverOut(6)">
+      <div class="fa fa-balance-scale menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Beneficii. Riscuri</div>
+    </a>
+
   </div>
   
   	
-	<!-- Content -->
   <div id="contentOverlay"></div>
+
+  <!-- Content -->
 	<div id="content">
 
     <div id="time">
+<!-- 
+         #time contine testul si imaginea. Rolul sau este ca, prin intermediului display-ului flex si proprietatii justify-content:space-between, sa pastreze cele doua elemente pe aceeasi "linie", dar in parti separate ale ecranului (p in stanga, imaginea in dreapta) -->
+
          <div><p>Tomografia computerizată este o procedură nedureroasă. Examinarea are loc în timp real, este de scurtă durată și poate dura între:</p> <p><b>30 - 60 de minute</b>.</p></div>
+         
+         <!-- imaginea cu ceasul -->
          <img src="https://static.thenounproject.com/png/934674-200.png">
     </div>
 
+
+
     <div id="slideshowParent">
 
+      <!-- #slideshowParent contine atat slideshow-ul propriu zis (impreuna cu cele doua sageti - inainte si inapoi), cat si cerculetele corespunzatoare imaginilor care permit deplasarea de la imaginea curenta la una aflata la un pas superior  -->
+
     <div id="slideshow">
+
+      <!-- .fa-angle-left ==> sageata stanga
+      Imaginea initiala este 1-min.jpg; sursele se schimba in functie de click-ul pe sageti/cerculete, fiind incarcata o noua imagine vectorul de surse aflat in fisierul slideshow.js (../JS Files/slideshow.js)
+      .fa-angle-right ==> sageata dreapta -->
+
       <i class="fa fa-angle-left" aria-hidden="true" onclick="previousImage()"></i>
       <img src="../Resources/Optimised Images/SlideShow/1-min.jpg">
       <i class="fa fa-angle-right" aria-hidden="true" onclick="nextImage()"></i>
       </div>
 
       <div id="circles">
+        
+        <!-- Aici se regasesc cele 7 cerculete aferente imaginilor
+        6/7 cerculete nu sunt pline (.fa-circle-o din FontAwesome 4.7 + .inactiv)
+        Pentru indexul imaginii active, clasele cerculetului respectiv se vor schimba din .fa-circle-o si .inactiv in fa-circle si .active
+
+        .inactiv si .active permit o cautare mai simpla in JavaScript a imaginii pe care s-a dat click
+         -- nu am ales activ deoarece acesta este un substring al cuvantului inactiv, iar cautarea ar fi returnat rezultate eronate prin metodele utilizate in JS
+         pentru acelasi motiv am utilizat si cele doua clase suplimentare (.inactiv si .active) intrucat "fa-circle" ar fi fost substring al lui "fa-circle-o" -->
+
         <i class="fa fa-circle active" aria-hidden="true" onclick="showImage(0)"></i>
         <i class="fa fa-circle-o inactiv" aria-hidden="true" onclick="showImage(1)"></i>
         <i class="fa fa-circle-o inactiv" aria-hidden="true" onclick="showImage(2)"></i>

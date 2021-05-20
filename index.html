@@ -11,14 +11,58 @@
 </head>
 <body>
 
-    <!-- Mobile Menu -->
+	<!-- 
+        ****************
+        ****************
+
+		Homepage
+
+		****************
+        ****************
+
+
+	 -->
+
+
+	<!-- Meniuri -->
+
+    <!-- Structura necesara pentru Mobile Menu -->
 
     <div id="headerCont">
-			<header><i class="fa fa-bars" aria-hidden="true" onclick="openMobileMenu()"></i></header>
-		
+            
+            <!-- id-ul headerCont contine header-ul (care are setat un background transparent pe HomePage), impreuna cu meniul pentru tableta/mobil -->
+            <!-- Avem nevoie de #headerCont si nu putem folosi doar header intrucat pozitia lui header trebuie setata ca relativa pentru a permite afisarea corecta a meniului hamburger sub iconita respectiva.
 
-    <div id="for-mobile">
-	
+            Intrucat nu putem avea si position: absolute si position:relative (generata by default) pe aceeasi sectiune simultan:
+            #headerCont, situandu-se mereu deasupra continutului, in partea de sus a paginii si ocupand intreaga latime posibila, primeste position:absoulte cu atributele aferente (top, left, right -> 0) -->
+
+
+			<header>
+
+
+			<!-- 
+            	Contine butonul care face activ meniul pe mobil/tableta
+            	Adaugat pe HomePage doar pentru a mentine structura similara cu celelalte pagini (unde exista header) si pentru a permite pozitionarea corecta a meniului de tip hamburger
+
+            -->
+
+                <!--
+                	.fa-bars => iconita cu 3 bare din libraria FontAwesome 4.7 specifica meniului tip hamburger (FontAwesome link-uit prin: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+
+                	 Devine activ doar la width <1024px cand primeste display:block.
+                	 Initial este setat invizibil prin display:none; nu poate deschide meniul special, intrucat in lipsa click-ului nu se executa functia openMobileMenu() descrisa in fisierul menu.js
+
+                	 (JS Files/menu.js)
+
+                -->
+
+				<i class="fa fa-bars" aria-hidden="true" onclick="openMobileMenu()"></i>
+			</header>
+
+
+   <!--  Meniul propriu-zis creat pentru rezolutii mici -->	
+
+
 	<div id="mobile-menu">
 		 <a  href="index.html">Acasă</a>
 		 <a  href="HTML Files/intro.html">Ce este tomografia computerizată?</a>
@@ -29,63 +73,147 @@
 		 <a  href="HTML Files/riscuri-beneficii.html">Beneficii. Riscuri</a>
 	</div>
     </div>
-    </div>
 
 
-	<!-- Menu -->
+	<!-- Menuiul Standard - width >1024px -->
 	
+	<!-- functiile menuHover(x) si menuHoverOut(x) stabilesc vizibilitatea si invizibilitatea explicatiei fiecarei iconite din meniu (vezi JS Files/menu.js) 
+		 indexul x indica elementul care trebuie afisat sau ascuns
+
+		 .fa si .menuElement se ocupa de iconitele din meniu
+		 .fa-"..." se ocupa de o iconita specifica din libraria FontAwesome 4.7
+		 .menuElementExp are in atributie explicatiile iconitelor din meniu => Este ascuns in lipsa hover-ului si devine vizibil cand cursorul se afla pe iconita legata de el
+	-->
+
 	<div id="menu">
-		 <a  href="index.html" onmouseover="menuHover(0)" onmouseout="menuHoverOut(0)"><div class="fa fa-home menuElement" aria-hidden="true"></div><div class="menuElementExp">Acasă</div></a>
-		 <a  href="HTML Files/intro.html" onmouseover="menuHover(1)" onmouseout="menuHoverOut(1)"><div class="fa fa-question-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce este tomografia computerizată?</div></a>
-		 <a  href="HTML Files/componente.html" onmouseover="menuHover(2)" onmouseout="menuHoverOut(2)"><div class="fa fa-puzzle-piece menuElement" aria-hidden="true"></div><div class="menuElementExp">Componente</div></a>
-		 <a  href="HTML Files/functionare.html" onmouseover="menuHover(3)" onmouseout="menuHoverOut(3)"><div class="fa fa-cog menuElement" aria-hidden="true"></div><div class="menuElementExp">Mecanismul de funcționare</div></a>
-		 <a  href="HTML Files/afectiuni.html" onmouseover="menuHover(4)" onmouseout="menuHoverOut(4)"><div class="fa fa-medkit menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce afecțiuni pot fi determinate?</div></a>
-		 <a  href="HTML Files/info.html" onmouseover="menuHover(5)" onmouseout="menuHoverOut(5)"><div class="fa fa-info-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce trebuie să știi?</div></a>
-		 <a  href="HTML Files/riscuri-beneficii.html" onmouseover="menuHover(6)" onmouseout="menuHoverOut(6)"><div class="fa fa-balance-scale menuElement" aria-hidden="true"></div><div class="menuElementExp">Beneficii. Riscuri</div></a>
+
+		 <a  href="index.html" onmouseover="menuHover(0)" onmouseout="menuHoverOut(0)">
+		 	<div class="fa fa-home menuElement" aria-hidden="true"></div>
+		 	<div class="menuElementExp">Acasă</div>
+		 </a>
+
+		 <a  href="HTML Files/intro.html" onmouseover="menuHover(1)" onmouseout="menuHoverOut(1)">
+		 	<div class="fa fa-question-circle menuElement" aria-hidden="true"></div>
+		 	<div class="menuElementExp">Ce este tomografia computerizată?</div>
+		 </a>
+
+		 <a  href="HTML Files/componente.html" onmouseover="menuHover(2)" onmouseout="menuHoverOut(2)">
+		 	<div class="fa fa-puzzle-piece menuElement" aria-hidden="true"></div>
+		 	<div class="menuElementExp">Componente</div>
+		 </a>
+
+		 <a  href="HTML Files/functionare.html" onmouseover="menuHover(3)" onmouseout="menuHoverOut(3)">
+		 	<div class="fa fa-cog menuElement" aria-hidden="true"></div>
+		 	<div class="menuElementExp">Mecanismul de funcționare</div>
+		 </a>
+
+		 <a  href="HTML Files/afectiuni.html" onmouseover="menuHover(4)" onmouseout="menuHoverOut(4)">
+		 	<div class="fa fa-medkit menuElement" aria-hidden="true"></div>
+		 	<div class="menuElementExp">Ce afecțiuni pot fi determinate?</div>
+		 </a>
+
+		 <a  href="HTML Files/info.html" onmouseover="menuHover(5)" onmouseout="menuHoverOut(5)">
+		 	<div class="fa fa-info-circle menuElement" aria-hidden="true"></div>
+		 	<div class="menuElementExp">Ce trebuie să știi?</div>
+		 </a>
+
+		 <a  href="HTML Files/riscuri-beneficii.html" onmouseover="menuHover(6)" onmouseout="menuHoverOut(6)">
+		 	<div class="fa fa-balance-scale menuElement" aria-hidden="true"></div>
+		 	<div class="menuElementExp">Beneficii. Riscuri</div>
+		 </a>
 	</div>
     
 
-	<!-- Content -->
+	<!-- 
+
+	id-ul contentOverlay este layerul de culoare mai inchisa care este afisat la fiecare deschidere a meniului pentru mobil si la fiecare hover pe meniul standard pentru a permite vizibilitatea mai buna a textului 
+    prin z-index este pozitionat deasupra contentului propriu zis din pagina, dar sub header/meniu
+
+	-->
 
 	<div id="contentOverlay"></div>
 
+
+	<!-- Content -->
+
 	<div id="content">
+        
 
-		<div id="above">
-		<div id="container">
-			<div id="letters-container">
-				<div>C</div>
-				<div>T</div>
-			</div>
+        <!-- Continutul propriu-zis este impartit in doua parti:
 
-			 <div id="text-container">
-			  <p>Computerul Tomograf</p>
-			  <p>O perspectivă completă</p><!-- 
-			  <p onclick="dark()">black</p>
-			<p onclick="light()">white</p> -->
-	        </div>
-	    </div>
-	    <div id="bottom-part">
-	        <div id="white-space"></div>
+         I. Literele CT, linia verticala (border-right la containerul cu cele doua litere) si cele doua texte din partea dreapta
+        II. Spatiul necesar pastrarii layout-ului si butonul "Afla mai multe"
 
-	     <div class="grid bttn-container">
-	       <a  href="HTML Files/intro.html"><button type="button">Află mai multe</button></a>
-	    </div>
+        Partea I se identifica prin id-ul #above
+        Partea II de identifica prin id-ul #bottom-part -->
+
+
+        <!-- Am adaugat id-ul #container care cuprinde ambele parti intrucat dorim sa avem "chenarul continutului" centrat in pagina, dar nu si continutul propriu zis (ambele parti existente in chenar trebuie sa porneasca din partea din stanga pentru mentinerea layout-ului imaginat -in privinta butonului in special-)
+ -->
+        <div id="container">
+
+		      <div id="above">
+		
+		          <div id="letters-container">
+				      <div>C</div>
+				      <div>T</div>
+			      </div>
+
+			      <div id="text-container">
+			        <p>Computerul Tomograf</p>
+			        <p>O perspectivă completă</p>
+			      </div>
+
+
+			        <!-- Test Theme Changer
+
+
+			        <p onclick="dark()">black</p>
+			        <p onclick="light()">white</p>
+
+			         -->
+	          </div>
+
+	          <div id="bottom-part">
+	     
+	          <!--  #white-space reprezinta spatiul invizibil necesar pastrarii layout-ului -buton sub linia verticala la 50px distanta de marginea stanga (standard layout: >1024px width)-; 
+	    	      (se putea folosi si o margine stanga mai mare aplicata butonului) -->
+
+	              <div id="white-space"></div>
+
+	              <div class="bttn-container">
+	                 <a  href="HTML Files/intro.html">
+	       	            <button type="button">Află mai multe</button>
+	                 </a>
+	              </div>
+
+	          </div>
 
 	   </div>
-
-		</div>
 	</div>
 
+    
+
+    <!-- Sectiune aferenta butonului de referinte din coltul dreapta jos al paginii - in format standard (centru-jos pentru mobile view) -->
+
+
 	<div id="ref">
-			<a  href="HTML Files/referinte.html"><button>Referințe</button></a>
+			<a  href="HTML Files/referinte.html">
+				<button>Referințe</button>
+			</a>
 	</div>
 
 
 	
 
 
-	<!-- !!OLD VERSION  - CSS Grid Layout -->
+	<!-- 
+
+        *********************************
+		!!!OLD VERSION  - CSS Grid Layout
+        *********************************
+ 
+		 -->
 
 	 <!-- <div id="content">
 
@@ -144,9 +272,11 @@
 
 	<script type="text/javascript">
 
+	  // pageNo da indexul paginii (in meniu) in asa fel incat sa putem stii care este iconita ce trebuie evidentiata pe toata durata sesiunii petrecuta in acea pagina (color:favPink)
+
 	  pageNo=0;
 	  
-   </script>
+    </script>
 
 	<script type="text/javascript" src="JS Files/menu.js"></script>
 

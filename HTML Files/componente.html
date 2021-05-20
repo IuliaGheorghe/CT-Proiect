@@ -10,48 +10,139 @@
 </head>
 <body>
 
+  <!-- 
+      
+      ***********************************************
+      ***********************************************
+
+      Componente
+
+      ***********************************************
+      ***********************************************
+
+    -->
+
+     <!-- 
+
+       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+      - explicatii pentru structura in index.html (vezi si intro.html pentru header) 
+
+    -->
+   
+
+    <!-- Meniuri-->
+
+
     <!-- Mobile Menu -->
 
 
   <div id="headerCont">
-  <header>Componente<i class="fa fa-bars" aria-hidden="true" onclick="openMobileMenu()"></i></header>
+    
+      <header>
+        Componente
+        <i class="fa fa-bars" aria-hidden="true" onclick="openMobileMenu()"></i>
+      </header>
 
-  <div id="for-mobile">
-  <div id="mobile-menu">
-     <a  href="../index.html">Acasă</a>
-     <a  href="intro.html">Ce este tomografia computerizată?</a>
-     <a  href="componente.html">Componente</a>
-     <a  href="functionare.html">Mecanismul de funcționare</a>
-     <a  href="afectiuni.html">Ce afecțiuni pot fi determinate?</a>
-     <a  href="info.html">Ce trebuie să știi?</a>
-     <a  href="riscuri-beneficii.html" >Beneficii. Riscuri</a>
-  </div>
-  </div>
+      <div id="mobile-menu">
+         <a  href="../index.html">Acasă</a>
+         <a  href="intro.html">Ce este tomografia computerizată?</a>
+         <a  href="componente.html">Componente</a>
+         <a  href="functionare.html">Mecanismul de funcționare</a>
+         <a  href="afectiuni.html">Ce afecțiuni pot fi determinate?</a>
+         <a  href="info.html">Ce trebuie să știi?</a>
+         <a  href="riscuri-beneficii.html" >Beneficii. Riscuri</a>
+      </div>
   </div>
     
 	<!-- Menu -->
+
 	<div id="menu">
-		 <a  href="../index.html" onmouseover="menuHover(0)" onmouseout="menuHoverOut(0)"><div class="fa fa-home menuElement" aria-hidden="true"></div><div class="menuElementExp">Acasă</div></a>
-		 <a  href="intro.html" onmouseover="menuHover(1)" onmouseout="menuHoverOut(1)"><div class="fa fa-question-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce este tomografia computerizată?</div></a>
-		 <a  href="componente.html" onmouseover="menuHover(2)" onmouseout="menuHoverOut(2)"><div class="fa fa-puzzle-piece menuElement" aria-hidden="true"></div><div class="menuElementExp">Componente</div></a>
-		 <a  href="functionare.html" onmouseover="menuHover(3)" onmouseout="menuHoverOut(3)"><div class="fa fa-cog menuElement" aria-hidden="true"></div><div class="menuElementExp">Mecanismul de funcționare</div></a>
-		 <a  href="afectiuni.html" onmouseover="menuHover(4)" onmouseout="menuHoverOut(4)"><div class="fa fa-medkit menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce afecțiuni pot fi determinate?</div></a>
-		 <a  href="info.html" onmouseover="menuHover(5)" onmouseout="menuHoverOut(5)"><div class="fa fa-info-circle menuElement" aria-hidden="true"></div><div class="menuElementExp">Ce trebuie să știi?</div></a>
-		 <a  href="riscuri-beneficii.html" onmouseover="menuHover(6)" onmouseout="menuHoverOut(6)"><div class="fa fa-balance-scale menuElement" aria-hidden="true"></div><div class="menuElementExp">Beneficii. Riscuri</div></a>
+		<a  href="../index.html" onmouseover="menuHover(0)" onmouseout="menuHoverOut(0)">
+      <div class="fa fa-home menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Acasă</div>
+    </a>
+
+		<a  href="intro.html" onmouseover="menuHover(1)" onmouseout="menuHoverOut(1)">
+      <div class="fa fa-question-circle menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Ce este tomografia computerizată?</div>
+    </a>
+
+		<a  href="componente.html" onmouseover="menuHover(2)" onmouseout="menuHoverOut(2)">
+      <div class="fa fa-puzzle-piece menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Componente</div>
+    </a>
+
+		<a  href="functionare.html" onmouseover="menuHover(3)" onmouseout="menuHoverOut(3)">
+      <div class="fa fa-cog menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Mecanismul de funcționare</div>
+    </a>
+
+		<a  href="afectiuni.html" onmouseover="menuHover(4)" onmouseout="menuHoverOut(4)">
+      <div class="fa fa-medkit menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Ce afecțiuni pot fi determinate?</div>
+    </a>
+
+		<a  href="info.html" onmouseover="menuHover(5)" onmouseout="menuHoverOut(5)">
+      <div class="fa fa-info-circle menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Ce trebuie să știi?</div>
+    </a>
+
+		<a  href="riscuri-beneficii.html" onmouseover="menuHover(6)" onmouseout="menuHoverOut(6)">
+      <div class="fa fa-balance-scale menuElement" aria-hidden="true"></div>
+      <div class="menuElementExp">Beneficii. Riscuri</div>
+    </a>
+
 	</div>
 	
-	<!-- Content -->
+	
 	<div id="contentOverlay"></div>
+
+  <!-- Content -->
 	<div id="content">
+        
 
         <div id="image-cont">
+          
+          <!-- 
+          Aici sunt afisate imaginile care evdentiaza componentele pe care se da click. Imaginile se schimba la click prin intermediul functiilor din fisierul componente.js (../JS Files/componente.js)
+          By default, pentru situatia in care pagina abia s-a incarcat sau cand nicio componenta nu este selectata, culorile componentelor sunt afisate pr gri (imaginea default.png din locatia ../Resources/Images/CT Components - Images/default.png)
+
+          Unele componente se afla in interiorul altora. Astfel am stabilit culorile:
+
+          a. roz-mov: elemente aflate la exterior (stratul cel mai de la suprafata - un fel de z-index:1)
+          b. albastru: elemente aflate sub stratul exterior (z-index:0)
+          c. verde: elemente de sub stratul albastru (z-index:-1) 
+
+          Intrucat se afiseaza o singura imagine per componenta, in cazul in care avem mai multe oomponente deschise, se va afisa imaginea corespunzatoare ultimei componente deschise de user
+          Daca se inchide ultima componenta deschisa, o vom putea observa pe penultima; (daca inchidem componenta cu deschiderea n, observam componenta deschisa la pasul n-1)
+          Orice inchidere a unei componente intermediare nu va afecta imaginea afisata - ne focusam pe ultima deschisa
+
+
+        -->
+
             <img src="../Resources/Images/CT Components - Images/default.png"/>
         </div>
 
+
 		<p>Părţile componente ale computerului tomograf sunt: </p>
+
         <ol>
-        	<li onclick="compoExpFun(0)"> tunelul <i class="fa fa-caret-down" aria-hidden="true"></i></li>
-        	<li class="compoExp"> Această componentă a CT-ului reprezintă locul unde este introdus pacientul pentru a se realiza investigațiile.</li>
+
+           <!--  
+            Pentru fiecare element principal (element al listei ce contine denumirea componentei, nu descrierea) se poate observa sageata din dreapta care sugereaza apasarea pe element pentru descoperirea descrierii lui - UI/UX mai bun pentru o interactiune mai buna cu vizitatorul
+            Aceasta mica sageata (care este de fapt un triunghi echilateral orientat cu varful in jos) este data de clasa .fa-caret-down din Font Awesome
+
+            Similar structurii din header, pentru a permite spatierea intre denumire si triunghi se foloseste justify-content: space-between pe elementul li respectiv care primeste proprietatea de display:flex 
+
+            Descrierea componentei este stocata de un element din lista cu clasa .compoExp ce initial este ascunsa, dar care se deschide prin click pe componenta de care este legata
+
+            Functia compoExpFun(x) din fisierul componente.js permite deschiderea simultana a explicatiilor mai multor componente, verificand numarul de click-uri de pe un element (la numar par de click-rui explicatia devine invizibila) dintr-un vector de elemente
+
+          -->
+
+        	  <li onclick="compoExpFun(0)"> tunelul <i class="fa fa-caret-down" aria-hidden="true"></i></li>
+        	  <li class="compoExp"> Această componentă a CT-ului reprezintă locul unde este introdus pacientul pentru a se realiza investigațiile.</li>
 
             <li onclick="compoExpFun(1)"> detectoarele de radiaţie X <i class="fa fa-caret-down" aria-hidden="true"></i></li>
             <li class="compoExp"> Componentă a CT-ului prin care se măsoară intensitatea fasciculului subțire de raze X.</li>
@@ -72,6 +163,7 @@
             <li class="compoExp"> Componentă a CT-ului care stochează toate informațiile realizate în urma investigațiilor; această componentă îi oferă pacientului posibilitatea de a compara rezultatele ulterioare cu unele actuale.</li>
 
        </ol>
+
        <p>Tomograful multidetector (cunoscut şi sub numele de “tomograf multislice”) permite o scanare continuă, concomitent cu deplasarea mesei cu pacientul. Astfel, acesta conduce la obţinerea mai rapidă a unor imagini de o calitate foarte bună cu ajutorul mai multor coroane de detectori.</p>
 	</div>
 

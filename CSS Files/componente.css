@@ -1,9 +1,31 @@
+/*Rolul acestui id este de a centra imaginea cu componentele (display:flex + justify-content: center)
+si de a pastra o rezolutie potrivita a imaginii ( de aceea atributul height se modifica periodic in sectiunea de Responsive Web Design)
+in mod automat pentru width se ocupa toata latimea disponibila
+*/
+
+#image-cont{
+	display: flex;
+	justify-content: center;
+	height: 500px;
+}
+
+/*Pentru a evita un stretching nedorit al imaginii pe rezolutii mari, initial, imaginea va ocupa doar 80% din latimea disponibila a containerului
+inaltimea se ajusteaza automat, ocupand maximul posibil al elementului parinte - #image-cont (initial de 500px)*/
+
+img{
+	width: 80%;
+	height: auto;
+}
+
+
+
 ol{
 	list-style-type: none;
-	list-style-position: inside;
 	margin: 50px 0;
 	padding: 0;
 }
+
+/*Am pus display:flex + justify-content: space-between pe elementele din lista pentru a avea denumirea componentei si sageata in parti diferite (stanga:text - dreapta: sageata)*/
 
 li{
 	display: flex;
@@ -15,34 +37,44 @@ li{
 	
 }
 
+/*.compoExp, care identifica descrierea componentelor, este ascuns initial (pana la momentul click-ului) prin display:none
+In JS, in cazul click-urilor cu numar impar se va schimba display-ul intr-unul de tip flex
+Pentru click cu numar par pe componenta se revine la invizibilitate
+*/
+
 .compoExp{
 	font-size: 14px;
+
+	/*daca pe lista am folosit capitalize pentru a scrie cu caps litera de la inceputul fiecarui cuvant, aici, pentru descrierea componentei am eliminat aceasta evidentiere*/
 	text-transform: none;
+
+	/*prin margin-ul anterior aplicato tuturor elementelor listei am fi obtinut sus o distanta de 20px de denumirea elementului; de aceea folosim margin-top: 0 pentru a suprascrie acest aspect*/
 	margin-top: 0;
+
+	/*rgba da culoarea in rgb, iar prin parametrul a modifica opacitatea/transparenta*/
 	background-color: rgba(0,0,0,0.03);
+	border: 2px solid rgba(0,0,0,0.8);
 	display: none;
-	border: 2px solid rgba(0,0,0,0.8)
 }
+
+
+/*In lista, elementele <li> cu denumirile componentelor vor fi intotdeauna copii cu index impar
+Vrem ca acestor elemente, pe hover sa le atasam un cursor de tip pointer pentru a sugera, pe langa exisenta sagetetii, inca o data posibilitatea de deschidere a unei descrieri*/
 
 li:nth-child(odd):hover{
 	cursor: pointer;
 }
 
-#image-cont{
-	display: flex;
-	justify-content: center;
-	position: relative;
-	height: 500px;
-}
+
+/*
+------------------------------------
+Responsive Web Design
+------------------------------------ 
+*/
 
 
-img{
-	width: 80%;
-	height: auto;
-}
 
 @media only screen and (max-width: 1440px){
-
 
 	li{
 		padding: 40px;
