@@ -1,0 +1,56 @@
+#doze-radiatii{
+	background-color: #eee;
+	padding: 40px;
+}
+
+select{
+
+	width: 100%;
+	padding: 15px;
+	background-color: transparent;
+	border:none;
+	font-size: 16px;
+	font-weight: bold;
+	color: var(--favPink);
+	border-bottom: 2px solid var(--favPink);
+}
+
+select:focus{
+    outline: none;
+}
+
+#informatii-radiatii{
+	margin: 50px;
+}
+
+.info{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 20px;
+}
+
+
+@media only screen and (max-width: 700px){
+
+	#doze-radiatii{
+		padding: 20px;
+	}
+
+	#informatii-radiatii{
+		margin: 20px 10px;
+	}
+
+
+}
+
+@media only screen and (max-width: 375px){
+
+	.info{
+	
+	font-size: 20px;
+	
+}
+
+
+}

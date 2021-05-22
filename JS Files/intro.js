@@ -1,11 +1,10 @@
 // stocheaza restul impartirii la 2 al numarului de clickuri pe fiecare casuta de topografie
 
-let clicksOnComponents=[0, 0]
+let clicksOnComponents=[0, 0];
 
 function topografie(x){
 
-   pe click par, in functie de parametrul x care sugereaza elementul pentru care se face descrierea, se afiseaza rezultatul
-   se 
+   // pe click par, in functie de parametrul x care sugereaza elementul pentru care se face traducerea, se afiseaza rezultatul
 
    if(clicksOnComponents[x]==0){
 

@@ -1,4 +1,4 @@
-    // pageNo null la referinte unde nu trebuie evidentiata nicio casuta din meniu 
+    // pageNo=null la bibliografie unde nu trebuie evidentiata nicio casuta din meniu 
 
     if(pageNo!==null)
     {
