@@ -7,7 +7,7 @@ body{
 
 .analize{
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 	text-decoration: none;
 	color:#fff;
 	background-color: #2c3e50;
