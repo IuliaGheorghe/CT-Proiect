@@ -66,8 +66,8 @@ let chosenValue;
 function writeValues(i){
 	document.getElementsByClassName("doza")[0].innerHTML=radiatii[i].radiatie + " mSv";
 	document.getElementsByClassName("perioada")[0].innerHTML=radiatii[i].perioada;
-	document.getElementsByClassName("risc")[0].innerHTML=(radiatii[i].radiatie/2000).toFixed(6) + " %";
-	document.getElementsByClassName("numar")[0].innerHTML=Math.floor(100/(radiatii[i].radiatie/2000));
+	document.getElementsByClassName("risc")[0].innerHTML=(radiatii[i].radiatie*100/2000).toFixed(6) + " %";
+	document.getElementsByClassName("numar")[0].innerHTML=Math.floor(100/(radiatii[i].radiatie*100/2000));
 }
 
 function changeValues(chosen){
@@ -105,7 +105,7 @@ function recalculareDoza(){
 		totalDose+=checkboxValues[i]*Number(radiatii[i].radiatie);
 
 	document.getElementsByClassName("composed")[0].innerHTML=totalDose.toFixed(3) + "mSv";
-	document.getElementsByClassName("composed")[1].innerHTML=(totalDose/2000).toFixed(6) + "%";
+	document.getElementsByClassName("composed")[1].innerHTML=(totalDose*100/2000).toFixed(6) + "%";
 
 	console.log(totalDose);
 
