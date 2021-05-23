@@ -5,6 +5,19 @@ body{
 	
 }
 
+.analize{
+	position: absolute;
+	z-index: 1;
+	text-decoration: none;
+	color:#fff;
+	background-color: #2c3e50;
+	padding: 20px;
+	left: 1.2in;
+}
+
+.analize:hover{
+	background-color: #9b59b6;
+}
 
 /* 
 
@@ -214,6 +227,12 @@ button{
 
 
 @media only screen and (max-width: 670px){
+
+	.analize{
+		left: 0;
+		padding: 12px;
+		font-size: 14px;
+	}
 
 	#letters-container{
 		width: 60px;
