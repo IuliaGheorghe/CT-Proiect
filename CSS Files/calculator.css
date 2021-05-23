@@ -63,6 +63,7 @@ label{
 .options{
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 
 fieldset{
@@ -96,6 +97,21 @@ input[type="checkbox"]{
 	}
 
 
+}
+
+@media only screen and (max-width: 450px){
+
+	#risc-compus, #doze-radiatii{
+		padding: 10px;
+	}
+
+	fieldset{
+		margin: 20px 0;
+	}
+
+	input[type="number"]{
+		margin: 0;
+	}
 }
 
 @media only screen and (max-width: 375px){
